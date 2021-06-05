@@ -437,10 +437,10 @@ footer {
 @media screen and (max-width: 450px) {
     
     .brtop{
-        background-color: unset;
-        background-image: url("IMG/diptyque.png");
+        background-image: url(../IMG/diptyque.png);
         height: 250px;
         margin-top: 140px;
+        background-color: unset;
     }
     .bd{
        visibility: hidden;
