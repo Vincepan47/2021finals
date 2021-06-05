@@ -437,7 +437,7 @@ footer {
 @media screen and (max-width: 450px) {
     
     .brtop{
-        background-image: url(assets/IMG/diptyque.png);
+        background-image: url('/assets/IMG/diptyque.png');
         height: 250px;
         margin-top: 140px;
     }
