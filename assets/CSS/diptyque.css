@@ -394,16 +394,14 @@ footer {
         overflow: hidden;
     }
     .brtop{
-        background-image: url(/assets/IMG/diptyque.png);
         height: 400px;
-        background-repeat: no-repeat;
-        background-size: 100%;
     }
+    
     .bd{
         visibility: hidden;
     }
     .brword{
-    left: 300px;
+    left: 220px;
     top: 80px;
     z-index: 20;
     }
@@ -431,10 +429,13 @@ footer {
         display: flex;
         font-family: 'Dancing Script', cursive;
     }
-
+    .deco{
+        position: relative;
+        left: -30px;
+    }
 }
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 375px) {
     
     .brtop{
         background-image: url(/assets/IMG/diptyque.png);
@@ -536,4 +537,4 @@ footer {
     .phonefunc{
         visibility: visible;
     }
-}
+} */
