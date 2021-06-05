@@ -354,18 +354,16 @@ footer{
         overflow: hidden;
     }
     .brtop{
-        background-image: url(/assets/IMG/diptyque.png);
         height: 400px;
-        background-repeat: no-repeat;
-        background-size: 100%;
     }
+    
     .bd{
         visibility: hidden;
     }
     .brword{
-    left: 300px;
-    top: 80px;
-    z-index: 20;
+        left: 150px;
+        top: 80px;
+        z-index: 20;
     }
     .bdpic {
         visibility: hidden;
@@ -383,117 +381,18 @@ footer{
       visibility: hidden;
     }
     .showspace2 {
-        width: 800px;
+        width: 620px;
         height: auto;
         background-color: white;
-        margin-left: 11%;
+        margin-left: 8%;
+        margin-right: 5%;
         margin-bottom: 30px;
         display: flex;
         font-family: 'Dancing Script', cursive;
     }
-
+    .deco{
+        position: relative;
+        left: -30px;
+    }
 }
 
-@media screen and (max-width: 400px) {
-    
-    .brtop{
-        background-image: url(/assets/IMG/diptyque.png);
-        height: 250px;
-        margin-top: 140px;
-    }
-    .bd{
-       visibility: hidden;
-    }
-    .brand{
-        visibility: hidden;
-    }
-
-    .backwhite{
-       left: 30px;
-       width: 320px;
-       height: 520px;
-       top: -880px;
-    }
-    .bgpic {
-        width: 320px;
-        padding: 10px;
-        background-color: rgb(128, 129, 129);
-        position: relative;
-        top: 100px;
-        left: 15px;
-        z-index: 10;
-    }
-    
-    #bgpic {
-        height: 510px;
-        width: 300px;
-    }
-    .tape {
-        width: 40px;
-        height: 200px;
-        background-color: rgb(207, 183, 160);
-        opacity: 0.8;
-        position: relative;
-        top: -500px;
-        left: 35px;
-        transform: rotate(45deg);
-        z-index: 10;
-    }
-    .sec {
-        width: 40px;
-        height: 200px;
-        background-color: rgb(207, 183, 160);
-        opacity: 0.8;
-        position: relative;
-        top: -250px;
-        left: 260px;
-        transform: rotate(45deg);
-        z-index: 10;
-    }
-
-    .showspace2 {
-        width: 350px;
-        height: auto;
-        background-color: white;
-        margin-left: 4%;
-        margin-bottom: 30px;
-        display: block;
-        font-family: 'Dancing Script', cursive;
-        position: relative;
-        top: -250px;
-    }
-    .productshow {
-        width: 150px;
-        height: 250px;
-        border-bottom: 0.8px solid gray;
-        text-align: center;
-        padding-top: 74px;
-        margin-left: 100px;
-        margin-bottom: 30px;
-        background-color: white;
-        
-    }
-    .productshow img {
-        width: 150px;
-    }
-    .proword {
-        width: 300px;
-        font-size: 14px;
-        margin-left: 10%;
-        padding-right: 7%;
-        padding-bottom: 5%;
-        padding-top: 1%;
-    }
-    .member{
-        visibility: hidden;
-    }
-    .contact{
-        visibility: hidden;
-    }
-    .cart{
-        visibility: hidden;
-    }
-    .phonefunc{
-        visibility: visible;
-    }
-}
