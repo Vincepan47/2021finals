@@ -401,9 +401,9 @@ footer {
         visibility: hidden;
     }
     .brword{
-    left: 220px;
-    top: 80px;
-    z-index: 20;
+        left: 150px;
+        top: 80px;
+        z-index: 20;
     }
     .bdpic {
         visibility: hidden;
@@ -424,7 +424,7 @@ footer {
         width: 800px;
         height: auto;
         background-color: white;
-        margin-left: 11%;
+        margin-left: 2%;
         margin-bottom: 30px;
         display: flex;
         font-family: 'Dancing Script', cursive;
