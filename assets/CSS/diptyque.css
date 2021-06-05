@@ -180,7 +180,8 @@ body {
     opacity: 0.8;
     position: relative;
     top: -650px;
-    left: 110px;
+    /* left: 110px; */
+    left: 8vw;
     transform: rotate(45deg);
     z-index: 10;
 }
@@ -192,7 +193,8 @@ body {
     opacity: 0.8;
     position: relative;
     top: -290px;
-    left: 490px;
+    /* left: 490px; */
+    left: 33vw;
     transform: rotate(45deg);
     z-index: 10;
 }
@@ -401,13 +403,18 @@ footer {
     }
     .brtop{
         height: 400px;
+        background-image: url(../IMG/diptyque.png);
+        margin-top: 65px;
+        background-color: unset;
+        background-size: cover;
+        background-repeat: no-repeat
     }
     
     .bd{
         visibility: hidden;
     }
     .brword{
-        left: 150px;
+        left: 170px;
         top: 80px;
         z-index: 20;
     }
@@ -428,25 +435,31 @@ footer {
     }
     .showspace2 {
         width: 620px;
-        height: auto;
-        background-color: white;
-        margin-left: 9%;
-        margin-bottom: 30px;
-        display: flex;
-        font-family: 'Dancing Script', cursive;
+        margin-left: 10%;
     }
     .deco{
-        position: relative;
-        left: -30px;
+        left: 5px;
+    }
+    .backwhite{
+        left: 170px;
+    }
+    .bgpic {
+        left: 75px;
+    }
+    .tape {
+        left: 90px;
+    }
+    
+    .sec {
+        top: -290px;
+        left: 470px;
     }
 }
 @media screen and (max-width: 450px) {
     
     .brtop{
-        background-image: url(../IMG/diptyque.png);
         height: 250px;
         margin-top: 140px;
-        background-color: unset;
     }
     .bd{
        visibility: hidden;
