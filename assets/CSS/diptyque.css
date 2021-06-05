@@ -421,10 +421,10 @@ footer {
       visibility: hidden;
     }
     .showspace2 {
-        width: 650px;
+        width: 620px;
         height: auto;
         background-color: white;
-        margin-left: 5%;
+        margin-left: 8%;
         margin-right: 5%
         margin-bottom: 30px;
         display: flex;
