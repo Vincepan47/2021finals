@@ -313,7 +313,7 @@ body {
 
 .bestdeco {
     position: relative;
-    top: -630px;
+    top: -650px;
     left: 420px;
     width: 200px;
     height: 200px;
@@ -393,7 +393,6 @@ footer {
     height: 300px;
 }
 /* rwd */
-
 @media screen and (max-width: 1024px) {
     .box{
         overflow: hidden;
@@ -477,8 +476,6 @@ footer {
     .bgpic {
         width: 320px;
         padding: 10px;
-        background-color: rgb(128, 129, 129);
-        position: relative;
         top: 100px;
         left: 15px;
         z-index: 10;
@@ -494,30 +491,22 @@ footer {
     .tape {
         width: 40px;
         height: 200px;
-        background-color: rgb(207, 183, 160);
-        opacity: 0.8;
         position: relative;
         top: -500px;
         left: 35px;
-        transform: rotate(45deg);
         z-index: 10;
     }
     .sec {
         width: 40px;
         height: 200px;
-        background-color: rgb(207, 183, 160);
-        opacity: 0.8;
         position: relative;
         top: -250px;
         left: 260px;
-        transform: rotate(45deg);
         z-index: 10;
     }
 
     .showspace2 {
         width: 85%;
-        height: auto;
-        background-color: white;
         margin-left: 8%;
         margin-bottom: 30px;
         display: block;
@@ -528,12 +517,10 @@ footer {
     .productshow {
         width: 150px;
         height: 250px;
-        border-bottom: 0.8px solid gray;
         text-align: center;
         padding-top: 74px;
         margin-left: 25%;
         margin-bottom: 30px;
-        background-color: white;
     }
     .productshow img {
         width: 150px;

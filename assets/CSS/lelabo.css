@@ -1,48 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-a{
-    text-decoration: none;
-    color:inherit;
+
+.phonefunc {
+    visibility: hidden;
 }
-hr{
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+hr {
     margin-top: 20px;
     width: 70%;
     margin-left: 60px;
 }
-.box{
-    /* border: 1px solid blue; */
+
+.box {
     height: 880px;
-    width: auto;
+    margin-left: 14vw;
 }
-.box1{
-    /* border: 1px solid blue; */
+
+.box1 {
     height: 1000px;
-    width: auto;
 }
-body{
+
+body {
     background-color: rgb(241, 239, 236);
 }
+
 /* 第一區塊 */
-.brtop{
+.brtop {
     background-color: rgb(73, 27, 27);
-    /* background-color: rgb(59, 33, 17); */
     height: 710px;
 }
-.brand{
+
+.brand {
     background-color: rgb(209, 208, 208);
-    width: 940px;
+    /* width: 940px; */
+    width: 66vw;
     height: 450px;
     position: relative;
     top: 135px;
-    left: 14%;
-    padding-left: 35px;
+    /* margin-left: 14vw; */
+    /* left:14% */
+    padding-left: 3%;
     border-radius: 5px;
 }
-.bd{
+
+.bd {
     text-align: left;
     width: 170px;
     height: 50px;
@@ -55,60 +66,70 @@ body{
     transition: 0.5s;
 
 }
-.bd p{
+
+.bd p {
     font-size: 35px;
     color: white;
     font-family: 'Dancing Script', cursive;
 }
-.bd:hover{
+
+.bd:hover {
     transform: scale(1.02);
     box-shadow: 4px 4px 6px rgb(255, 255, 255);
 }
-.bdpic{
+
+.bdpic {
     position: relative;
     top: 40px;
-    width: 580px;
+    width: 40vw;
     overflow: hidden;
     transition: 0.5s;
     height: 370px;
 }
 
-#bdpic{
-    width: 580px;
+#bdpic {
+    /* width: 580px; */
+    width: 40vw;
     transition: 0.5s;
     opacity: 0.88;
 }
-#bdpic:hover{
+
+#bdpic:hover {
     transform: scale(1.1);
     opacity: 1;
 }
-.brword{
+
+.brword {
     width: 430px;
     height: 250px;
     font-family: 'Dancing Script', cursive;
     background-color: white;
     position: relative;
-    left: 700px;
-    top: -260px;
-    padding-right: 40px;
-    padding-left: 45px;
-    padding-top: 30px;
-    border-radius: 5px;
-    transition: 0.5s;
-    text-align: right;
+     /* left: 700px; */
+     left: 48vw;
+     top: -260px;
+     padding-right: 40px;
+     padding-left: 45px;
+     padding-top: 30px;
+     border-radius: 5px;
+     transition: 0.5s;
+     text-align: right;
 }
 
-.brword:hover{
+.brword:hover {
     box-shadow: 4px 5px 6px rgb(0, 0, 0);
 }
-.brword p{
-font-size: 16px;
- position: relative;
- top: 10px;
-}
-.bdpic1{
+
+.brword p {
+    font-size: 16px;
     position: relative;
-    left: 600px;
+    top: 10px;
+}
+
+.bdpic1 {
+    position: relative;
+    /* left: 600px; */
+    left: 42vw;
     top: -310px;
     width: 210px;
     overflow: hidden;
@@ -117,205 +138,228 @@ font-size: 16px;
     border-radius: 5px;
     transition: 0.5s;
 }
-#bdpic1{
+
+#bdpic1 {
     width: 200px;
     border-radius: 5px;
     border: 2px solid lightgray;
 }
-.bdpic1:hover{
+
+.bdpic1:hover {
     box-shadow: 4px 5px 6px rgb(0, 0, 0);
 }
+
 /* 第二區塊背景 */
-.deco{
-    width: 650px;
+.deco {
+    width: 45vw;
     height: 850px;
     position: relative;
-    left: 10px;
+    left: 4vw;
+    /* left 10px */
 }
-.bgpic{
+
+.bgpic {
     width: 455px;
     padding: 10px;
     background-color: slategrey;
     position: relative;
     top: 100px;
-    left: 90px;
+    left: 6vw;
     z-index: 10;
 }
-#bgpic{
+
+#bgpic {
     height: 650px;
     width: 434px;
 }
 
 /* 膠帶 */
-.tape{
+.tape {
     width: 40px;
     height: 230px;
     background-color: rgb(207, 183, 160);
     opacity: 0.8;
     position: relative;
     top: -650px;
-    left: 110px;
+    /* left: 110px; */
+    left: 8vw;
     transform: rotate(45deg);
     z-index: 10;
 }
-.sec{
+
+.sec {
     width: 40px;
     height: 230px;
     background-color: rgb(207, 183, 160);
     opacity: 0.8;
     position: relative;
     top: -290px;
-    left: 490px;
+    /* left: 490px; */
+    left: 33vw;
     transform: rotate(45deg);
     z-index: 10;
 }
+
 /* 鋸齒狀 */
-.tape::before{
+.tape::before {
     content: '';
     position: absolute;
     top: -10px;
     width: 100%;
     height: 10px;
-    background: linear-gradient(
-        45deg,
-        transparent 33.333%,
-        rgb(207, 183, 160) 33.333%,
-        rgb(207, 183, 160) 66.667%,
-        transparent 66.667%
-    ),
-    linear-gradient(
-        -45deg,
-        transparent 33.333%,
-        rgb(207, 183, 160) 33.333%,
-        rgb(207, 183, 160) 66.667%,
-        transparent 66.667%
-    );
+    background: linear-gradient(45deg,
+            transparent 33.333%,
+            rgb(207, 183, 160) 33.333%,
+            rgb(207, 183, 160) 66.667%,
+            transparent 66.667%),
+        linear-gradient(-45deg,
+            transparent 33.333%,
+            rgb(207, 183, 160) 33.333%,
+            rgb(207, 183, 160) 66.667%,
+            transparent 66.667%);
     background-size: 8px 30px;
 }
-.tape::after{
+
+.tape::after {
     content: '';
     position: absolute;
     bottom: -10px;
     width: 100%;
     height: 10px;
     transform: rotate(180deg);
-    background: linear-gradient(
-        45deg,
-        transparent 33.333%,
-        rgb(207, 183, 160) 33.333%,
-        rgb(207, 183, 160) 66.667%,
-        transparent 66.667%
-    ),
-    linear-gradient(
-        -45deg,
-        transparent 33.333%,
-        rgb(207, 183, 160) 33.333%,
-        rgb(207, 183, 160) 66.667%,
-        transparent 66.667%
-    );
+    background: linear-gradient(45deg,
+            transparent 33.333%,
+            rgb(207, 183, 160) 33.333%,
+            rgb(207, 183, 160) 66.667%,
+            transparent 66.667%),
+        linear-gradient(-45deg,
+            transparent 33.333%,
+            rgb(207, 183, 160) 33.333%,
+            rgb(207, 183, 160) 66.667%,
+            transparent 66.667%);
     background-size: 10px 30px;
 }
-.backwhite{
+
+.backwhite {
     background-color: white;
     width: 400px;
     height: 650px;
     position: relative;
-    left: 190px;
+    left: 12vw;
+    /* left 190px */
     top: -1070px;
     opacity: 0.8;
 }
+
 /* 搖晃動畫 */
 @keyframes shake {
     0% {
         transform: rotate(0deg);
     }
-    30%{
+
+    30% {
         transform: rotate(10deg);
     }
+
     100% {
         transform: rotate(-15deg);
     }
 
 }
+
 /* 第二區塊 */
 
 
-.showspace{
+.showspace {
     background-color: white;
     width: 680px;
+    /* width: 48vw; */
     height: 710px;
     position: relative;
-    left: 700px;
+    /* left: 700px; */
+    left: 48vw;
     top: -785px;
     border-radius: 5px;
     z-index: 3;
 }
+
 /* 商品推薦 */
-.product{
+.product {
     width: 340px;
     height: 355px;
     text-align: center;
     font-family: 'Dancing Script', cursive;
     padding-top: 45px;
-    background-color: white;  
+    background-color: white;
 }
-.three{
+
+.three {
     position: relative;
     left: 340px;
     top: -710px;
 }
-.three img{
+
+.three img {
     height: 230px;
 }
-.product img{
+
+.product img {
     width: 150px;
     height: 193px;
     transition: 0.5s;
 }
-.product img:hover{
+
+.product img:hover {
     transform: scale(0.9);
 }
-.bestdeco{
+
+.bestdeco {
     position: relative;
-    top: -630px;
+    top: -650px;
     left: 420px;
     width: 200px;
     height: 200px;
     overflow: hidden;
     animation: shake 0.8s infinite;
 }
-.bestdeco img{
+
+.bestdeco img {
     width: 200px;
 }
 
 /* 商品總覽 */
-.showspace2{
-    width: 1000px;
-    height: auto;
-    background-color: white;
-    margin-left: 15%;
-    margin-bottom: 30px;
-    display: flex;
-    font-family: 'Dancing Script', cursive;
+.showspace2 {
+     /* width: 1000px; */
+     width: 70vw;
+     height: auto;
+     background-color: white;
+     margin-left: 15%;
+     margin-bottom: 30px;
+     display: flex;
+     font-family: 'Dancing Script', cursive;
 }
-.productshow{
+
+.productshow {
     width: 340px;
     height: 355px;
     border-bottom: 0.8px solid gray;
     text-align: center;
     padding-top: 68px;
-    margin-left:80px;
+    margin-left: 80px;
     margin-bottom: 30px;
-    background-color: white; 
+    background-color: white;
 }
-.productshow img{
+
+.productshow img {
     width: 180px;
     transition: 0.5s;
 }
-.productshow img:hover{
+
+.productshow img:hover {
     transform: scale(0.9);
 }
-.proword{
+
+.proword {
     width: 600px;
     font-size: 16px;
     position: relative;
@@ -324,74 +368,212 @@ font-size: 16px;
     padding-top: 8%;
     transition: 0.3s;
 }
-.proword h1:hover{
+
+.proword h1:hover {
     opacity: 0.5;
 }
-.proword h4{
-margin-top: 10px;
+
+.proword h4 {
+    margin-top: 10px;
 }
-.proword p{
+
+.proword p {
     margin-top: 30px;
 }
+
 /* footer */
-footer{
+footer {
     /* position: relative;
     top: 700px; */
     height: 200px;
     background-color: black;
 }
-.footword{
+
+.footword {
     color: white;
     width: 30%;
     height: 300px;
 }
+
 /* rwd */
 @media screen and (max-width: 1024px) {
-    .box{
+    .box {
         overflow: hidden;
     }
-    .box1{
+
+    .box1 {
         overflow: hidden;
     }
-    .brtop{
+
+    .brtop {
         height: 400px;
+        background-image: url(../IMG/lelabo.jpg);
+        margin-top: 65px;
+        background-color: unset;
+        background-size: cover;
+        background-repeat: no-repeat
     }
-    
-    .bd{
+
+    .bd {
         visibility: hidden;
     }
-    .brword{
-        left: 150px;
+
+    .brword {
+        left: 170px;
         top: 80px;
         z-index: 20;
     }
+
     .bdpic {
         visibility: hidden;
     }
-    .brand{
+
+    .brand {
         background-color: unset;
     }
+
     #bdpic {
-       visibility: hidden;
+        visibility: hidden;
     }
+
     .bdpic1 {
         visibility: hidden;
     }
+
     .showspace {
-      visibility: hidden;
+        visibility: hidden;
     }
+
     .showspace2 {
         width: 620px;
-        height: auto;
-        background-color: white;
-        margin-left: 9%;
-        margin-bottom: 30px;
-        display: flex;
-        font-family: 'Dancing Script', cursive;
+        margin-left: 12%;
     }
-    .deco{
-        position: relative;
-        left: -30px;
+
+    .deco {
+        left: 5px;
+    }
+
+    .backwhite {
+        left: 170px;
+    }
+
+    .bgpic {
+        left: 75px;
+    }
+
+    .tape {
+        left: 90px;
+    }
+
+    .sec {
+        top: -290px;
+        left: 470px;
     }
 }
 
+@media screen and (max-width: 450px) {
+
+    .brtop {
+        height: 250px;
+        margin-top: 140px;
+    }
+
+    .bd {
+        visibility: hidden;
+    }
+
+    .brand {
+        visibility: hidden;
+    }
+
+    .backwhite {
+        left: 30px;
+        width: 320px;
+        height: 520px;
+        top: -860px;
+    }
+
+    .bgpic {
+        width: 320px;
+        padding: 10px;
+        top: 100px;
+        left: 15px;
+        z-index: 10;
+    }
+
+    .deco {
+        position: relative;
+        margin-left: 12%;
+    }
+
+    #bgpic {
+        height: 510px;
+        width: 300px;
+    }
+
+    .tape {
+        width: 40px;
+        height: 200px;
+        position: relative;
+        top: -500px;
+        left: 35px;
+        z-index: 10;
+    }
+
+    .sec {
+        width: 40px;
+        height: 200px;
+        position: relative;
+        top: -250px;
+        left: 260px;
+        z-index: 10;
+    }
+
+    .showspace2 {
+        width: 85%;
+        margin-left: 8%;
+        margin-bottom: 30px;
+        display: block;
+        font-family: 'Dancing Script', cursive;
+        position: relative;
+        top: -250px;
+    }
+
+    .productshow {
+        width: 150px;
+        height: 250px;
+        text-align: center;
+        padding-top: 74px;
+        margin-left: 25%;
+        margin-bottom: 30px;
+    }
+
+    .productshow img {
+        width: 150px;
+    }
+
+    .proword {
+        width: 300px;
+        font-size: 14px;
+        margin-left: 8%;
+        padding-right: 7%;
+        padding-bottom: 5%;
+        padding-top: 1%;
+    }
+
+    .member {
+        visibility: hidden;
+    }
+
+    .contact {
+        visibility: hidden;
+    }
+
+    .cart {
+        visibility: hidden;
+    }
+
+    .phonefunc {
+        visibility: visible;
+    }
+}

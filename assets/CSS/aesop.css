@@ -1,47 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-a{
-    text-decoration: none;
-    color:inherit;
+.phonefunc{
+    visibility: hidden;
 }
-hr{
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+hr {
     margin-top: 20px;
     width: 70%;
     margin-left: 60px;
 }
-.box{
-    /* border: 1px solid blue; */
+
+.box {
     height: 880px;
-    width: auto;
+    margin-left: 14vw;
 }
-.box1{
-    /* border: 1px solid blue; */
+
+.box1 {
     height: 1000px;
-    width: auto;
 }
+
 body{
     background-color: rgb(241, 239, 236);
 }
 /* 第一區塊 */
 .brtop{
-    /* background-color: rgb(88, 33, 26); */
-    /* background-color: rgb(73, 27, 27);  */
     background-color: rgb(45, 54, 29); 
     height: 710px;
 }
 .brand{
     background-color: rgb(199, 184, 161);
-    width: 940px;
-    height: 450px;
-    position: relative;
-    top: 135px;
-    left: 14%;
-    padding-left: 35px;
-    border-radius: 5px;
+   /* width: 940px; */
+   width: 66vw;
+   height: 450px;
+   position: relative;
+   top: 135px;
+   /* margin-left: 14vw; */
+   /* left:14% */
+   padding-left: 3%;
+   border-radius: 5px;
 }
 .bd{
     text-align: left;
@@ -68,14 +73,15 @@ body{
 .bdpic{
     position: relative;
     top: 40px;
-    width: 580px;
+    width: 40vw;
     overflow: hidden;
     transition: 0.5s;
     height: 370px;
 }
 
-#bdpic{
-    width: 580px;
+#bdpic {
+    /* width: 580px; */
+    width: 40vw;
     transition: 0.5s;
     opacity: 0.88;
 }
@@ -88,8 +94,8 @@ body{
     height: 250px;
     font-family: 'Dancing Script', cursive;
     background-color: rgb(243, 236, 224);
-    position: relative;
-    left: 700px;
+    /* left: 700px; */
+    left: 48vw;
     top: -260px;
     padding-right: 40px;
     padding-left: 45px;
@@ -109,14 +115,13 @@ font-size: 16px;
 }
 .bdpic1{
     position: relative;
-    left: 600px;
+    /* left: 600px; */
+    left: 42vw;
     top: -310px;
     width: 210px;
     overflow: hidden;
     padding: 5px 5px 30px 5px;
-    /* background-color: lightslategrey; */
     background-color: rgb(167, 143, 128);
-    /* background-color: rgb(199, 184, 161); */
     border-radius: 5px;
     transition: 0.5s;
 }
@@ -130,10 +135,11 @@ font-size: 16px;
 }
 /* 第二區塊背景 */
 .deco{
-    width: 650px;
+    width: 45vw;
     height: 850px;
     position: relative;
-    left: 10px;
+    left: 4vw;
+    /* left 10px */
 }
 .bgpic{
     width: 455px;
@@ -142,7 +148,7 @@ font-size: 16px;
     background-color: rgb(167, 143, 128);
     position: relative;
     top: 100px;
-    left: 90px;
+    left: 6vw;
     z-index: 10;
 }
 #bgpic{
@@ -158,7 +164,8 @@ font-size: 16px;
     opacity: 0.8;
     position: relative;
     top: -650px;
-    left: 110px;
+    /* left: 110px; */
+    left: 8vw;
     transform: rotate(45deg);
     z-index: 10;
 }
@@ -169,7 +176,8 @@ font-size: 16px;
     opacity: 0.8;
     position: relative;
     top: -290px;
-    left: 490px;
+    /* left: 490px; */
+    left: 33vw;
     transform: rotate(45deg);
     z-index: 10;
 }
@@ -224,7 +232,8 @@ font-size: 16px;
     width: 400px;
     height: 650px;
     position: relative;
-    left: 190px;
+    left: 12vw;
+    /* left 190px */
     top: -1070px;
     opacity: 0.8;
 }
@@ -246,9 +255,11 @@ font-size: 16px;
 .showspace{
     background-color: white;
     width: 680px;
+    /* width: 48vw; */
     height: 710px;
     position: relative;
-    left: 700px;
+    /* left: 700px; */
+    left: 48vw;
     top: -785px;
     border-radius: 5px;
     z-index: 3;
@@ -280,7 +291,7 @@ font-size: 16px;
 }
 .bestdeco{
     position: relative;
-    top: -630px;
+    top: -650px;
     left: 420px;
     width: 200px;
     height: 200px;
@@ -293,13 +304,14 @@ font-size: 16px;
 
 /* 商品總覽 */
 .showspace2{
-    width: 1000px;
-    height: auto;
-    background-color: white;
-    margin-left: 15%;
-    margin-bottom: 30px;
-    display: flex;
-    font-family: 'Dancing Script', cursive;
+      /* width: 1000px; */
+      width: 70vw;
+      height: auto;
+      background-color: white;
+      margin-left: 15%;
+      margin-bottom: 30px;
+      display: flex;
+      font-family: 'Dancing Script', cursive;
 }
 .productshow{
     width: 340px;
@@ -358,13 +370,18 @@ footer{
     }
     .brtop{
         height: 400px;
+        background-image: url(../IMG/aesop.jpg);
+        margin-top: 65px;
+        background-color: unset;
+        background-size: cover;
+        background-repeat: no-repeat
     }
     
     .bd{
         visibility: hidden;
     }
     .brword{
-        left: 150px;
+        left: 170px;
         top: 80px;
         z-index: 20;
     }
@@ -385,16 +402,115 @@ footer{
     }
     .showspace2 {
         width: 620px;
-        height: auto;
-        background-color: white;
-        margin-left: 9%;
-        margin-bottom: 30px;
-        display: flex;
-        font-family: 'Dancing Script', cursive;
+        margin-left: 12%;
+    }
+    .deco{
+        left: 5px;
+    }
+    .backwhite{
+        left: 170px;
+    }
+    .bgpic {
+        left: 75px;
+    }
+    .tape {
+        left: 90px;
+    }
+    
+    .sec {
+        top: -290px;
+        left: 470px;
+    }
+}
+@media screen and (max-width: 450px) {
+    
+    .brtop{
+        height: 250px;
+        margin-top: 140px;
+    }
+    .bd{
+       visibility: hidden;
+    }
+    .brand{
+        visibility: hidden;
+    }
+
+    .backwhite{
+       left: 30px;
+       width: 320px;
+       height: 520px;
+       top: -860px;
+    }
+    .bgpic {
+        width: 320px;
+        padding: 10px;
+        top: 100px;
+        left: 15px;
+        z-index: 10;
     }
     .deco{
         position: relative;
-        left: -30px;
+        margin-left: 12%;
+    }
+    #bgpic {
+        height: 510px;
+        width: 300px;
+    }
+    .tape {
+        width: 40px;
+        height: 200px;
+        position: relative;
+        top: -500px;
+        left: 35px;
+        z-index: 10;
+    }
+    .sec {
+        width: 40px;
+        height: 200px;
+        position: relative;
+        top: -250px;
+        left: 260px;
+        z-index: 10;
+    }
+
+    .showspace2 {
+        width: 85%;
+        margin-left: 8%;
+        margin-bottom: 30px;
+        display: block;
+        font-family: 'Dancing Script', cursive;
+        position: relative;
+        top: -250px;
+    }
+    .productshow {
+        width: 150px;
+        height: 250px;
+        text-align: center;
+        padding-top: 74px;
+        margin-left: 25%;
+        margin-bottom: 30px;
+    }
+    .productshow img {
+        width: 150px;
+    }
+    .proword {
+        width: 300px;
+        font-size: 14px;
+        margin-left: 8%;
+        padding-right: 7%;
+        padding-bottom: 5%;
+        padding-top: 1%;
+    }
+    .member{
+        visibility: hidden;
+    }
+    .contact{
+        visibility: hidden;
+    }
+    .cart{
+        visibility: hidden;
+    }
+    .phonefunc{
+        visibility: visible;
     }
 }
-
