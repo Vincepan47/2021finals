@@ -129,44 +129,50 @@
     </section>
     <section>
         <!-- 商品總覽 -->
+        <form>
         <div class="showspace2">
             <div class="productshow">
-                <div><a href="#"><img src="assets/IMG/lecandle.jpg"></a></div>
+                <div><img src="assets/IMG/lecandle.jpg"></div>
             </div>
             <div class="proword">
-                <a href="#"><h1>Le Labo Santal 26</h1></a>
+                <h1>Le Labo Santal 26</h1>
                 <h4>price $2650</h4>
                 <p>高貴優雅，充滿貴族氣息的香調，第一時間就展現溫和、煙薰和皮革般的質地，充斥整個空間，賦予它真實的性格。除了同樣有著煙薰皮革般的曠野芬芳，加上椰子、琥珀、香草的柔軟和閃爍，更多了一種寧靜舒緩的迷人感受。</p>
+                <h5>庫存：3</h5>
+                <input type="submit" class="addcarbtn" value="加入購物車">
             </div>
         </div>
+    </form>
+        <form>
         <div class="showspace2">
             <div class="productshow">
-                <div><a href="#"><img src="assets/IMG/lecandle1.jpg"></a></div>
+                <div><img src="assets/IMG/lecandle1.jpg"></div>
             </div>
             <div class="proword">
-                <a href="#"><h1>Le Labo Petit Grain 21</h1></a>
+                <h1>Le Labo Petit Grain 21</h1>
                 <h4>price $2650</h4>
                 <p>跳出以橙花為主要香氛，但不純然只是花香調，而是有著更多橙葉般的綠植基調，苦橙是比較苦一點，像是苦中帶甜的沈醉檀香雞尾酒。</p>
+                <h5>庫存：3</h5>
+                <input type="submit" class="addcarbtn" value="加入購物車">  
             </div>
         </div>
+    </form>
+    <form>
         <div class="showspace2">
             <div class="productshow">
-                <div><a href="#"><img src="assets/IMG/lecandle2.jpg"></a></div>
+                <div><img src="assets/IMG/lecandle2.jpg"></div>
             </div>
             <div class="proword">
-                <a href="#"><h1>Le Labo Vintage Santal 26</h1></a>
+                <h1>Le Labo Vintage Santal 26</h1>
                 <h4>price $2850</h4>
                 <p>特別復古感包裝！！高貴優雅，充滿貴族氣息的香調，第一時間就展現溫和、煙薰和皮革般的質地，充斥整個空間，賦予它真實的性格。除了同樣有著煙薰皮革般的曠野芬芳，加上椰子、琥珀、香草的柔軟和閃爍，更多了一種寧靜舒緩的迷人感受。</p>
+                <h5>庫存：3</h5>
+                <input type="submit" class="addcarbtn" value="加入購物車">
             </div>
         </div>
+    </form>
     </section>
     <div id="wincon" class="wincontent">
-        <div class="closebtn">
-            <a href="#" onclick="document.getElementById('wincon').style.display='none';
-            document.getElementById('dklayer').style.display='none'">
-                <span id="close"></span>
-            </a>
-        </div> 
         <div class="sign">
             <a href="#" onclick="document.getElementById('signin').style.display='block';
             document.getElementById('signup').style.display='none'">
@@ -183,8 +189,8 @@
                 信箱：<input type="email" class="enterplace" required><br>
                 密碼：<input type="password" class="enterplace" required><br>
                <input type="submit" class="logbtn" value="登入">
-               <a href="#" onclick="document.getElementById('wincon').style.display='none';
-               document.getElementById('dklayer').style.display='none'">關閉</a>
+               <input type="reset" class="logbtn" value="關閉" onclick="document.getElementById('wincon').style.display='none';
+               document.getElementById('dklayer').style.display='none'">
             </form>
         </div>
         <div class="login" id="signup">
@@ -193,8 +199,8 @@
                 信箱：<input type="email" class="enterplace" required><br>
                 密碼：<input type="password" class="enterplace" required><br>
                <input type="submit" class="logbtn" value="加入會員">
-               <a href="#" onclick="document.getElementById('wincon').style.display='none';
-               document.getElementById('dklayer').style.display='none'">關閉</a>
+               <input type="reset" class="logbtn" value="關閉" onclick="document.getElementById('wincon').style.display='none';
+               document.getElementById('dklayer').style.display='none'">
             </form>
         </div>
     </div>
