@@ -5,9 +5,11 @@
     margin: 0;
     padding: 0;
 }
-.phonefunc{
+
+.phonefunc {
     visibility: hidden;
 }
+
 a {
     text-decoration: none;
     color: inherit;
@@ -306,7 +308,7 @@ body {
 }
 
 .product img:hover {
-    transform: scale(0.9);
+    opacity: 0.8;
 }
 
 .bestdeco {
@@ -365,16 +367,36 @@ body {
     transition: 0.3s;
 }
 
-.proword h1:hover {
-    opacity: 0.5;
-}
-
 .proword h4 {
     margin-top: 10px;
 }
 
+.proword h4:hover {
+    opacity: 0.5;
+}
+
 .proword p {
     margin-top: 30px;
+    transition: 0.3s;
+}
+
+.proword p:hover {
+    transform: scale(1.2);
+}
+
+.proword h5 {
+    margin-top: 15px;
+    color: gray;
+}
+
+.addcarbtn {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 /* footer */
@@ -390,15 +412,18 @@ footer {
     width: 30%;
     height: 300px;
 }
+
 /* rwd */
 @media screen and (max-width: 1024px) {
-    .box{
+    .box {
         overflow: hidden;
     }
-    .box1{
+
+    .box1 {
         overflow: hidden;
     }
-    .brtop{
+
+    .brtop {
         height: 400px;
         background-image: url(../IMG/diptyque.png);
         margin-top: 65px;
@@ -406,71 +431,86 @@ footer {
         background-size: cover;
         background-repeat: no-repeat
     }
-    
-    .bd{
+
+    .bd {
         visibility: hidden;
     }
-    .brword{
+
+    .brword {
         left: 170px;
         top: 80px;
         z-index: 20;
     }
+
     .bdpic {
         visibility: hidden;
     }
-    .brand{
+
+    .brand {
         background-color: unset;
     }
+
     #bdpic {
-       visibility: hidden;
+        visibility: hidden;
     }
+
     .bdpic1 {
         visibility: hidden;
     }
+
     .showspace {
-      visibility: hidden;
+        visibility: hidden;
     }
+
     .showspace2 {
         width: 620px;
         margin-left: 12%;
     }
-    .deco{
+
+    .deco {
         left: 5px;
     }
-    .backwhite{
+
+    .backwhite {
         left: 170px;
     }
+
     .bgpic {
         left: 75px;
     }
+
     .tape {
         left: 90px;
     }
-    
+
     .sec {
         top: -290px;
         left: 470px;
     }
 }
+
 @media screen and (max-width: 450px) {
-    
-    .brtop{
+
+    .brtop {
         height: 250px;
         margin-top: 140px;
     }
-    .bd{
-       visibility: hidden;
-    }
-    .brand{
+
+    .bd {
         visibility: hidden;
     }
 
-    .backwhite{
-       left: 30px;
-       width: 320px;
-       height: 520px;
-       top: -860px;
+    .brand {
+        visibility: hidden;
     }
+
+    .backwhite {
+        left: 30px;
+        width: 320px;
+        height: 520px;
+        top: -860px;
+    }
+
     .bgpic {
         width: 320px;
         padding: 10px;
@@ -478,14 +518,17 @@ footer {
         left: 15px;
         z-index: 10;
     }
-    .deco{
+
+    .deco {
         position: relative;
-        margin-left: 12%;
+        margin-left: 3vw;
     }
+
     #bgpic {
         height: 510px;
         width: 300px;
     }
+
     .tape {
         width: 40px;
         height: 200px;
@@ -494,6 +537,7 @@ footer {
         left: 35px;
         z-index: 10;
     }
+
     .sec {
         width: 40px;
         height: 200px;
@@ -512,6 +556,7 @@ footer {
         position: relative;
         top: -250px;
     }
+
     .productshow {
         width: 150px;
         height: 250px;
@@ -520,9 +565,11 @@ footer {
         margin-left: 25%;
         margin-bottom: 30px;
     }
+
     .productshow img {
         width: 150px;
     }
+
     .proword {
         width: 300px;
         font-size: 14px;
@@ -531,16 +578,20 @@ footer {
         padding-bottom: 5%;
         padding-top: 1%;
     }
-    .member{
+
+    .member {
         visibility: hidden;
     }
-    .contact{
+
+    .contact {
         visibility: hidden;
     }
-    .cart{
+
+    .cart {
         visibility: hidden;
     }
-    .phonefunc{
+
+    .phonefunc {
         visibility: visible;
     }
 }

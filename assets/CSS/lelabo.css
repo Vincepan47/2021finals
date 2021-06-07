@@ -39,6 +39,7 @@ body {
     background-color: rgb(73, 27, 27);
     height: 710px;
 }
+
 .brand {
     background-color: rgb(209, 208, 208);
     /* width: 940px; */
@@ -51,6 +52,7 @@ body {
     padding-left: 3%;
     border-radius: 5px;
 }
+
 .bd {
     text-align: left;
     width: 170px;
@@ -63,6 +65,7 @@ body {
     padding: 5px 23px;
     transition: 0.5s;
 }
+
 .bd p {
     font-size: 35px;
     color: white;
@@ -101,15 +104,15 @@ body {
     font-family: 'Dancing Script', cursive;
     background-color: white;
     position: relative;
-     /* left: 700px; */
-     left: 48vw;
-     top: -260px;
-     padding-right: 40px;
-     padding-left: 45px;
-     padding-top: 30px;
-     border-radius: 5px;
-     transition: 0.5s;
-     text-align: right;
+    /* left: 700px; */
+    left: 48vw;
+    top: -260px;
+    padding-right: 40px;
+    padding-left: 45px;
+    padding-top: 30px;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-align: right;
 }
 
 .brword:hover {
@@ -151,7 +154,6 @@ body {
     height: 850px;
     position: relative;
     left: 4vw;
-    /* left 10px */
 }
 
 .bgpic {
@@ -304,7 +306,7 @@ body {
 }
 
 .product img:hover {
-    transform: scale(0.9);
+    opacity: 0.8;
 }
 
 .bestdeco {
@@ -323,14 +325,14 @@ body {
 
 /* 商品總覽 */
 .showspace2 {
-     /* width: 1000px; */
-     width: 70vw;
-     height: auto;
-     background-color: white;
-     margin-left: 15%;
-     margin-bottom: 30px;
-     display: flex;
-     font-family: 'Dancing Script', cursive;
+    /* width: 1000px; */
+    width: 70vw;
+    height: auto;
+    background-color: white;
+    margin-left: 15%;
+    margin-bottom: 30px;
+    display: flex;
+    font-family: 'Dancing Script', cursive;
 }
 
 .productshow {
@@ -350,7 +352,7 @@ body {
 }
 
 .productshow img:hover {
-    transform: scale(0.9);
+    transform: scale(1.4);
 }
 
 .proword {
@@ -363,16 +365,36 @@ body {
     transition: 0.3s;
 }
 
-.proword h1:hover {
-    opacity: 0.5;
-}
-
 .proword h4 {
     margin-top: 10px;
 }
 
+.proword h4:hover {
+    opacity: 0.5;
+}
+
 .proword p {
     margin-top: 30px;
+    transition: 0.3s;
+}
+
+.proword p:hover {
+    transform: scale(1.2);
+}
+
+.proword h5 {
+    margin-top: 15px;
+    color: gray;
+}
+
+.addcarbtn {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 /* footer */
