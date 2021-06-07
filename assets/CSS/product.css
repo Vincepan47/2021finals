@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css');
+body{
+    background-color: rgb(241, 239, 236);
+    background-image: url("../IMG/probg.png");
+    /* background-repeat: no-repeat; */
+    /* background-position: right center; */
+    background-attachment: fixed;
+    /* font-family: cursive; */
+    font-family:'cwTexFanSong';
+}
+.phonefunc{
+    display: none !important;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+hr {
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 60px;
+}
+.bigshowspace{
+    width: 70vw;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    top: 15%;
+    /* margin-top: 10%; */
+    margin-left: 15%;
+    /* margin-bottom: 30px; */
+    /* font-family: 'Dancing Script', cursive; */
+    /* border: 1px solid blue; */
+}
+.showspace2 {
+    /* width: 1000px; */
+    /* width: 70vw; */
+    height: auto;
+    background-color: white;
+    /* margin-left: 15%; */
+    /* margin-bottom: 30px; */
+    display: flex;
+    /* font-family: 'Dancing Script', cursive; */
+}
+#commentplace{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.comm{
+    margin-top: 15px;
+}
+.comm p{
+    margin-top: 5px;
+    font-size: 16px;
+}
+.productshow {
+    width: 340px;
+    height: 355px;
+    border-bottom: 0.8px solid gray;
+    text-align: center;
+    padding-top: 74px;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.productshow img {
+    width: 220px;
+    transition: 0.5s;
+}
+
+.productshow img:hover {
+    transform: scale(1.4);
+}
+
+.proword {
+    width: 600px;
+    font-size: 16px;
+    position: relative;
+    margin-left: 10%;
+    padding-right: 8%;
+    padding-top: 8%;
+    transition: 0.3s;
+}
+
+.proword h3 {
+    margin-top: 10px;
+}
+
+.proword p {
+    margin-top: 30px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.proword h5 {
+    margin-top: 15px;
+    color: gray;
+}
+
+.addcarbtn {
+    background-color: black;
+    color: white;
+    border: none;
+    /* width: 100px; */
+    /* height: 30px; */
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+}
+.sepline{
+    display: none;
+}
+/* rwd */
+@media screen and (max-width: 1024px) {
+  
+    .bigshowspace {
+        width: 90%;
+        margin-left: 5%;
+        top: 20%;
+    }
+    .proword h1{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .showspace2 {
+        width: 100%;
+        margin-left: 0%;
+        /* margin-bottom: 30px; */
+        display: block;
+    }
+    .sepline{
+        display: block;
+        width: 100%;
+        height: 1px;
+        border-top:1px solid gray;
+    }
+    .bigshowspace {
+        top: 5vh;
+        /* display: flex; */
+        flex-direction: column;
+    }
+    .productshow {
+        width: 150px;
+        height: 250px;
+        text-align: center;
+        padding-top: 74px;
+        margin-left: 25%;
+        margin-bottom: 30px;
+    }
+    .productshow img {
+        width: 150px;
+    }
+
+    .proword {
+        width: 280px;
+        font-size: 14px;
+        margin-left: 8%;
+        padding-right: 7%;
+        padding-bottom: 5%;
+        padding-top: 1%;
+    }
+    .proword h1{
+        font-size: 18px;
+    }
+    .comm p{
+        font-size: 14px;
+    }
+    .member {
+        display: none !important;
+    }
+
+    .contact {
+        display: none !important;
+    }
+
+    .cart {
+        display: none !important;
+    }
+
+    .phonefunc {
+        display: block !important;
+    }
+}

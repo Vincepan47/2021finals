@@ -7,7 +7,7 @@
 }
 
 .phonefunc {
-    visibility: hidden;
+    display: none !important;
 }
 
 a {
@@ -397,7 +397,7 @@ body {
     width: 100px;
     height: 30px;
     margin-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
 /* footer */
@@ -427,7 +427,7 @@ footer {
     .brtop {
         height: 400px;
         background-image: url(../IMG/aesop.jpg);
-        margin-top: 65px;
+        /* margin-top: 65px; */
         background-color: unset;
         background-size: cover;
         background-repeat: no-repeat
@@ -494,15 +494,14 @@ footer {
 
     .brtop {
         height: 250px;
-        margin-top: 140px;
     }
 
     .bd {
-        visibility: hidden;
+        display: none;
     }
 
     .brand {
-        visibility: hidden;
+        display: none;
     }
 
     .backwhite {
@@ -549,8 +548,8 @@ footer {
     }
 
     .showspace2 {
-        width: 85%;
-        margin-left: 8%;
+        width: 90%;
+        margin-left: 5%;
         margin-bottom: 30px;
         display: block;
         font-family: 'Dancing Script', cursive;
@@ -581,18 +580,18 @@ footer {
     }
 
     .member {
-        visibility: hidden;
+        display: none !important;
     }
 
     .contact {
-        visibility: hidden;
+        display: none !important;
     }
 
     .cart {
-        visibility: hidden;
+        display: none !important;
     }
 
     .phonefunc {
-        visibility: visible;
+        display: block !important;
     }
 }
