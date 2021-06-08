@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/CSS/product.css">
     <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/floatwin.css">
     <title>燭間 - 無花果</title>
 </head>
 <body>
@@ -50,7 +51,7 @@
                 <li class="member"><a href="#"
                         onclick="document.getElementById('wincon').style.display='block';document.getElementById('dklayer').style.display='block'">會員中心</a>
                 </li>
-                <li class="contact"><a href="#">聯絡我們</a></li>
+                <li class="contact"><a href="about.html">關於我們</a></li>
             </ul>
         </div>
     </nav>
@@ -60,6 +61,7 @@
             <li><a href="lelabo.html">Le Labo</a></li>
             <li><a href="aesop.html">Aesop</a></li>
             <li><a href="diptyque.html">Diptyque</a></li>
+            <li class="phonefunc"><a href="about.html">關於我們</a></li>
             <li class="phonefunc"
                 onclick="document.getElementById('wincon').style.display='block';document.getElementById('dklayer').style.display='block'">
                 <a href="#">會員</a></li>
@@ -102,6 +104,39 @@
         </div>
     </div>
 </section>
+<div id="wincon" class="wincontent">
+    <div class="sign">
+        <a href="#" onclick="document.getElementById('signin').style.display='block';
+    document.getElementById('signup').style.display='none'">
+            <div class="signbtn">Sign in</div>
+        </a>
+        <div class="sep"></div>
+        <a href="#" onclick="document.getElementById('signin').style.display='none';
+    document.getElementById('signup').style.display='block'">
+            <div class="signbtn1">Sign up</div>
+        </a>
+    </div>
+    <div class="login" id="signin">
+        <form>
+            信箱：<input type="email" class="enterplace" required><br>
+            密碼：<input type="password" class="enterplace" required><br>
+            <input type="submit" class="logbtn" value="登入">
+            <input type="reset" class="logbtn" value="關閉" onclick="document.getElementById('wincon').style.display='none';
+       document.getElementById('dklayer').style.display='none'">
+        </form>
+    </div>
+    <div class="login" id="signup">
+        <form>
+            姓名：<input type="text" class="enterplace" required><br>
+            信箱：<input type="email" class="enterplace" required><br>
+            密碼：<input type="password" class="enterplace" required><br>
+            <input type="submit" class="logbtn" value="加入會員">
+            <input type="reset" class="logbtn" value="關閉" onclick="document.getElementById('wincon').style.display='none';
+       document.getElementById('dklayer').style.display='none'">
+        </form>
+    </div>
+</div>
+<div id="dklayer" class="darklayer"></div>
     <!-- js -->
     <script type="text/javascript" src="assets/JS/main.js"></script>
 </body>

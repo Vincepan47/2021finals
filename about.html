@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/about.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/floatwin.css">
+    <title>關於燭間</title>
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <nav>
+        <div class="burger" onclick="burgerFunction(this); showsidenav();">
+            <div class="top"></div>
+            <div class="mid"></div>
+            <div class="bottom"></div>
+        </div>
+        <a href="index.html" class="logo">燭間
+            <!--<img src="assets/IMG/aesop1.jpg">--></a>
+        <div class="nav-links">
+            <ul class="nav-ul">
+                <li class="cart"><a href="#">購物車</a>
+                    <ul class="drop-cart">
+                        <li>
+                            <div class="cart-product">
+                                <img src="assets/IMG/03.jpeg" alt="">
+                                <h2>購物車商品</h2>
+                                <p>商品數量</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cart-product">
+                                <img src="assets/IMG/03.jpeg" alt="">
+                                <h2>購物車商品</h2>
+                                <p>商品數量</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cart-product">
+                                <img src="assets/IMG/03.jpeg" alt="">
+                                <h2>購物車商品</h2>
+                                <p>商品數量</p>
+                            </div>
+                        </li>
+                        <li><a href="#">查看所有購物車商品</a></li>
+                        <button class="buybtn"><a href="#">結帳</a></button>
+                    </ul>
+                </li>
+                <li class="member"><a href="#"
+                        onclick="document.getElementById('wincon').style.display='block';document.getElementById('dklayer').style.display='block'">會員中心</a>
+                </li>
+                <li class="contact"><a href="about.html">關於我們</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 側邊選單 -->
+    <div class="Sidenav" id="Sidenav">
+        <ul>
+            <li><a href="lelabo.html">Le Labo</a></li>
+            <li><a href="aesop.html">Aesop</a></li>
+            <li><a href="diptyque.html">Diptyque</a></li>
+            <li class="phonefunc"><a href="about.html">關於我們</a></li>
+            <li class="phonefunc"
+                onclick="document.getElementById('wincon').style.display='block';document.getElementById('dklayer').style.display='block'">
+                <a href="#">會員</a></li>
+        </ul>
+    </div>
+    <section>
+        <div class="abouttop">
+            <div class="abouttitle">
+                <h1 id="aboutus">燭間的理想</h1>
+            </div>
+            <div class="ouridea">
+            <div class="decobox">
+                <p class="aboutword">
+                    每個蠟燭都可以儲存一段特定回憶的空間和時間，第一次收到的蠟燭、最後送的蠟燭等，其中也許蘊藏著美麗的故事。
+                    有句話說「香味可以讓你記住一個人」，點燃蠟燭的瞬間，回憶隨香氣緩緩浮現。<br>
+                    希望你們都能找到屬於自己的香氣與回憶，不管是想開啟一段緣分、找回過往又或是傳遞心意，
+                    我們都能幫助您找到最適合的蠟燭。
+                </p>
+            </div>
+                <div class="wordbg">
+                    <img src="assets/IMG/probg.png">
+                </div>
+            </div>
+        </div>
+        <div class="aboutsec">
+            <div class="memberalbum">
+                <img src="assets/IMG/pan.jpg">
+                <img src="assets/IMG/pan.jpg">
+                <img src="assets/IMG/tsai.jpg">
+                <img src="assets/IMG/chen.jpg">
+            </div>
+            <div class="scrdown">
+                <h3>
+                    Scroll Down 》》
+                </h3>
+            </div>
+            <div class="memberintro">
+                <div class="introplace">
+                    <h2>潘聖昀 - Vincent Pan</h2>
+                    <h4>中原大學 資訊管理學系 二年乙班</h4>
+                    <h4 class="work">網頁前端設計人員</h4>
+                    <p>
+                        上學期負責的是網頁後端設計，主要都是在編寫jsp程式和資料庫，讓我一直對於無法設計前端而感到可惜，
+                        這次總算換乙班設計前端，非常開心。
+                        甲、乙班兩次合作的過程中，我都學習到了非常多，雖然對於css/js的技術還不夠強，但可以明顯感覺到語法再慢慢進步，
+                        希望以後自己能夠繼續練習，讓自己的技術更上一層，並將所學用於未來，不論是職場或日常生活。
+
+                    </p>
+                </div>
+                <div class="introplace">
+                    <h2>李紹誠 - Jason Lee</h2>
+                    <h4>中原大學 資訊管理學系 二年乙班</h4>
+                    <h4 class="work">網頁前端設計人員</h4>
+                    <p>
+                        上學期負責的是網頁後端設計，主要都是在編寫jsp程式和資料庫，讓我一直對於無法設計前端而感到可惜，
+                        這次總算換乙班設計前端，非常開心。
+                        甲、乙班兩次合作的過程中，我都學習到了非常多，雖然對於css/js的技術還不夠強，但可以明顯感覺到語法再慢慢進步，
+                        希望以後自己能夠繼續練習，讓自己的技術更上一層，並將所學用於未來，不論是職場或日常生活。
+
+                    </p>
+                </div>
+                <div class="introplace">
+                    <h2>蔡煜暘 - Allen Tsai</h2>
+                    <h4>中原大學 資訊管理學系 二年甲班</h4>
+                    <h4 class="work">網頁後端設計人員</h4>
+                    <p>
+                        上學期負責的是網頁後端設計，主要都是在編寫jsp程式和資料庫，讓我一直對於無法設計前端而感到可惜，
+                        這次總算換乙班設計前端，非常開心。
+                        甲、乙班兩次合作的過程中，我都學習到了非常多，雖然對於css/js的技術還不夠強，但可以明顯感覺到語法再慢慢進步，
+                        希望以後自己能夠繼續練習，讓自己的技術更上一層，並將所學用於未來，不論是職場或日常生活。
+
+                    </p>
+                </div>
+                <div class="introplace">
+                    <h2>陳致元 - Vincent Chen</h2>
+                    <h4>中原大學 資訊管理學系 二年甲班</h4>
+                    <h4 class="work">網頁後端設計人員</h4>
+                    <p>
+                        上學期負責的是網頁後端設計，主要都是在編寫jsp程式和資料庫，讓我一直對於無法設計前端而感到可惜，
+                        這次總算換乙班設計前端，非常開心。
+                        甲、乙班兩次合作的過程中，我都學習到了非常多，雖然對於css/js的技術還不夠強，但可以明顯感覺到語法再慢慢進步，
+                        希望以後自己能夠繼續練習，讓自己的技術更上一層，並將所學用於未來，不論是職場或日常生活。
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="aboutthird">
+            <div></div>
+        </div>
+    </section>
+    <div id="wincon" class="wincontent">
+        <div class="sign">
+            <a href="#" onclick="document.getElementById('signin').style.display='block';
+    document.getElementById('signup').style.display='none'">
+                <div class="signbtn">Sign in</div>
+            </a>
+            <div class="sep"></div>
+            <a href="#" onclick="document.getElementById('signin').style.display='none';
+    document.getElementById('signup').style.display='block'">
+                <div class="signbtn1">Sign up</div>
+            </a>
+        </div>
+        <div class="login" id="signin">
+            <form>
+                信箱：<input type="email" class="enterplace" required><br>
+                密碼：<input type="password" class="enterplace" required><br>
+                <input type="submit" class="logbtn" value="登入">
+                <input type="reset" class="logbtn" value="關閉" onclick="document.getElementById('wincon').style.display='none';
+       document.getElementById('dklayer').style.display='none'">
+            </form>
+        </div>
+        <div class="login" id="signup">
+            <form>
+                姓名：<input type="text" class="enterplace" required><br>
+                信箱：<input type="email" class="enterplace" required><br>
+                密碼：<input type="password" class="enterplace" required><br>
+                <input type="submit" class="logbtn" value="加入會員">
+                <input type="reset" class="logbtn" value="關閉" onclick="document.getElementById('wincon').style.display='none';
+       document.getElementById('dklayer').style.display='none'">
+            </form>
+        </div>
+    </div>
+    <div id="dklayer" class="darklayer"></div>
+    <!-- js -->
+    <script type="text/javascript" src="assets/JS/main.js"></script>
+</body>
+
+</html>

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/CSS/aesop.css">
     <link rel="stylesheet" href="assets/CSS/floatwin.css">
     <title>燭間 - Aesop</title>
-
+</head>
 <body>
     <!-- 導覽列 -->
     <nav>
@@ -48,8 +48,10 @@
                         <button class="buybtn"><a href="#">結帳</a></button>
                     </ul>
                 </li>
-                <li class="member"><a href="#" onclick="document.getElementById('wincon').style.display='block';document.getElementById('dklayer').style.display='block'">會員中心</a></li>
-                <li class="contact"><a href="#">聯絡我們</a></li>
+                <li class="member"><a href="#"
+                        onclick="document.getElementById('wincon').style.display='block';document.getElementById('dklayer').style.display='block'">會員中心</a>
+                </li>
+                <li class="contact"><a href="about.html">關於我們</a></li>
             </ul>
         </div>
     </nav>
@@ -59,148 +61,162 @@
             <li><a href="lelabo.html">Le Labo</a></li>
             <li><a href="aesop.html">Aesop</a></li>
             <li><a href="diptyque.html">Diptyque</a></li>
-            <li class="phonefunc" onclick="document.getElementById('wincon').style.display='block';document.getElementById('dklayer').style.display='block'"><a href="#">會員</a></li>
+            <li class="phonefunc"><a href="about.html">關於我們</a></li>
+            <li class="phonefunc"
+                onclick="document.getElementById('wincon').style.display='block';document.getElementById('dklayer').style.display='block'">
+                <a href="#">會員</a></li>
         </ul>
     </div>
     <!-- 品牌 -->
     <article>
-    <section class="brtop">
-        <div class="box">
-            <div class="brand">
-                <div class="bdpic">
-                    <img src="assets/IMG/aesop.JPG" id="bdpic">
+        <section class="brtop">
+            <div class="box">
+                <div class="brand">
+                    <div class="bdpic">
+                        <img src="assets/IMG/aesop.JPG" id="bdpic">
+                    </div>
+                    <div class="brword">
+                        <h1>品牌故事</h1>
+                        <div>
+                            <p>
+                                Aesop一直秉持堅定的信念，開發一系列專業肌膚、秀髮及身體護理產品。我們致力於在科學驗證功效的基礎上，選用最優質的植物萃取和抗氧化成分。所有配方有效之餘亦絕對安全。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bdpic1">
+                        <img src="assets/IMG/aesop1.jpg" id="bdpic1">
+                    </div>
+                    <a href="https://www.aesop.com/tw/" target="_blank">
+                        <div class="bd">
+                            <p>Aesop</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="brword">
-                    <h1>品牌故事</h1>
-                    <div>
-                        <p>
-                            Aesop一直秉持堅定的信念，開發一系列專業肌膚、秀髮及身體護理產品。我們致力於在科學驗證功效的基礎上，選用最優質的植物萃取和抗氧化成分。所有配方有效之餘亦絕對安全。
-                        </p>
+            </div>
+        </section>
+
+        <section class="brsec">
+            <div class="box1">
+                <div class="deco">
+                    <div class="bgpic">
+                        <img src="assets/IMG/aesopbg.jpg" id="bgpic">
+                    </div>
+                    <div class="tape"></div>
+                    <div class="tape sec"></div>
+                    <div class="backwhite"></div>
+                </div>
+                <div class="showspace">
+                    <div class="product">
+                        <div><a href="product.html"><img src="assets/IMG/aecandle1.png"></a></div>
+                        <h4>阿加尼斯</h4>
+                        <h4>price $3300</h4>
+                        <hr>
+                    </div>
+                    <div class="product">
+                        <div><a href="product.html"><img src="assets/IMG/aecandle2.png"></a></div>
+                        <h4>托勒密</h4>
+                        <h4>price $3300</h4>
+                        <hr>
+                    </div>
+                    <div class="product three">
+                        <div><a href="product.html"><img src="assets/IMG/aecandle3.png"></a></div>
+                        <h4>卡里波斯</h4>
+                        <h4>price $3300</h4>
+                        <hr>
+                    </div>
+                    <div class="bestdeco">
+                        <img src="assets/IMG/best.jpg">
                     </div>
                 </div>
-                <div class="bdpic1">
-                    <img src="assets/IMG/aesop1.jpg" id="bdpic1">
+            </div>
+        </section>
+        <section>
+            <!-- 商品總覽 -->
+            <form>
+                <div class="showspace2">
+                    <div class="productshow">
+                        <div><a href="product.html"><img src="assets/IMG/aecandle1.png"></a></div>
+                    </div>
+                    <div class="proword">
+                        <a href="product.html">
+                            <h1>阿加尼斯</h1>
+                        </a>
+                        <h4>price $3300</h4>
+                        <p>交織著花朵、辛香、煙草的香氣，有如一首和諧交響曲；其名稱紀念了同名古希臘女天文學家，她以對月球及其周期的研究而聞名。散發小荳蔻、金合歡之氣味，帶有一抹幽微的煙草香調，讓人聯想起北非摩洛哥丹吉爾（Tangier）的情調。純素配方，不含動物成分，且均未經動物測試。
+                        </p>
+                        <h5>庫存：3</h5>
+                        <input type="submit" class="addcarbtn" value="加入購物車">
+                    </div>
                 </div>
-                <a href="https://www.aesop.com/tw/" target="_blank"><div class="bd">
-                    <p>Aesop</p>
-                </div></a>
-            </div>
-        </div>
-    </section>
-
-    <section class="brsec">
-        <div class="box1">
-            <div class="deco">
-                <div class="bgpic">
-                    <img src="assets/IMG/aesopbg.jpg" id="bgpic">
+            </form>
+            <form>
+                <div class="showspace2">
+                    <div class="productshow">
+                        <div><a href="product.html"><img src="assets/IMG/aecandle2.png"></a></div>
+                    </div>
+                    <div class="proword">
+                        <a href="product.html">
+                            <h1>托勒密</h1>
+                        </a>
+                        <h4>price $3300</h4>
+                        <p>散發著木質、樹脂、大地氣息的感性香調，其命名靈感源於一位埃及出生的古希臘學者，他總結了中世紀天文學的成就。散發雪松、柏樹及岩蘭草香氣的芳香蠟燭，讓人聯想到古老的森林。純素配方，不含動物成分，且均未經動物測試。
+                        </p>
+                        <h5>庫存：3</h5>
+                        <input type="submit" class="addcarbtn" value="加入購物車">
+                    </div>
                 </div>
-                <div class="tape"></div>
-                <div class="tape sec"></div>
-                <div class="backwhite"></div>
-            </div>
-            <div class="showspace">
-                <div class="product">
-                    <div><a href="product.html"><img src="assets/IMG/aecandle1.png"></a></div>
-                    <h4>阿加尼斯</h4>
-                    <h4>price $3300</h4>
-                    <hr>
+            </form>
+            <form>
+                <div class="showspace2">
+                    <div class="productshow">
+                        <div><a href="product.html"><img src="assets/IMG/aecandle3.png"></a></div>
+                    </div>
+                    <div class="proword">
+                        <a href="product.html">
+                            <h1>卡里波斯</h1>
+                        </a>
+                        <h4>price $3300</h4>
+                        <p>結合深綠大地與辛香調的芳香蠟燭，以古希臘天文學家命名，他以改良當時的行星理論而聞名。精緻隱微的芳香蠟燭，散發乳香、癒創木及清新紫蘇的香氣。純素配方，不含動物成分，且均未經動物測試。
+                        </p>
+                        <h5>庫存：3</h5>
+                        <input type="submit" class="addcarbtn" value="加入購物車">
+                    </div>
                 </div>
-                <div class="product">
-                    <div><a href="product.html"><img src="assets/IMG/aecandle2.png"></a></div>
-                    <h4>托勒密</h4>
-                    <h4>price $3300</h4>
-                    <hr>
-                </div>
-                <div class="product three">
-                    <div><a href="product.html"><img src="assets/IMG/aecandle3.png"></a></div>
-                    <h4>卡里波斯</h4>
-                    <h4>price $3300</h4>
-                    <hr>
-                </div>
-                <div class="bestdeco">
-                    <img src="assets/IMG/best.jpg">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <!-- 商品總覽 -->
-        <form>
-        <div class="showspace2">
-            <div class="productshow">
-                <div><a href="product.html"><img src="assets/IMG/aecandle1.png"></a></div>
-            </div>
-            <div class="proword">
-                <a href="product.html"><h1>阿加尼斯</h1></a>
-                <h4>price $3300</h4>
-                <p>交織著花朵、辛香、煙草的香氣，有如一首和諧交響曲；其名稱紀念了同名古希臘女天文學家，她以對月球及其周期的研究而聞名。散發小荳蔻、金合歡之氣味，帶有一抹幽微的煙草香調，讓人聯想起北非摩洛哥丹吉爾（Tangier）的情調。純素配方，不含動物成分，且均未經動物測試。</p>
-                <h5>庫存：3</h5>
-                <input type="submit" class="addcarbtn" value="加入購物車">
-            </div>
-        </div>
-    </form>
-    <form>
-        <div class="showspace2">
-            <div class="productshow">
-                <div><a href="product.html"><img src="assets/IMG/aecandle2.png"></a></div>
-            </div>
-            <div class="proword">
-                <a href="product.html"><h1>托勒密</h1></a>
-                <h4>price $3300</h4>
-                <p>散發著木質、樹脂、大地氣息的感性香調，其命名靈感源於一位埃及出生的古希臘學者，他總結了中世紀天文學的成就。散發雪松、柏樹及岩蘭草香氣的芳香蠟燭，讓人聯想到古老的森林。純素配方，不含動物成分，且均未經動物測試。</p>
-                <h5>庫存：3</h5>
-                <input type="submit" class="addcarbtn" value="加入購物車">
-            </div>
-        </div>
-    </form>
-    <form>
-        <div class="showspace2">
-            <div class="productshow">
-                <div><a href="product.html"><img src="assets/IMG/aecandle3.png"></a></div>
-            </div>
-            <div class="proword">
-                <a href="product.html"><h1>卡里波斯</h1></a>
-                <h4>price $3300</h4>
-                <p>結合深綠大地與辛香調的芳香蠟燭，以古希臘天文學家命名，他以改良當時的行星理論而聞名。精緻隱微的芳香蠟燭，散發乳香、癒創木及清新紫蘇的香氣。純素配方，不含動物成分，且均未經動物測試。</p>
-                <h5>庫存：3</h5>
-                <input type="submit" class="addcarbtn" value="加入購物車">
-            </div>
-        </div>
-    </form>
-    </section>
-    <div id="wincon" class="wincontent">
-        <div class="sign">
-            <a href="#" onclick="document.getElementById('signin').style.display='block';
+            </form>
+        </section>
+        <div id="wincon" class="wincontent">
+            <div class="sign">
+                <a href="#" onclick="document.getElementById('signin').style.display='block';
             document.getElementById('signup').style.display='none'">
-                <div class="signbtn">Sign in</div>
-            </a>
-            <div class="sep"></div>
-            <a href="#" onclick="document.getElementById('signin').style.display='none';
+                    <div class="signbtn">Sign in</div>
+                </a>
+                <div class="sep"></div>
+                <a href="#" onclick="document.getElementById('signin').style.display='none';
             document.getElementById('signup').style.display='block'">
-                <div class="signbtn1">Sign up</div>
-            </a>
-        </div>
-        <div class="login" id="signin">
-            <form>
-                信箱：<input type="email" class="enterplace" required><br>
-                密碼：<input type="password" class="enterplace" required><br>
-               <input type="submit" class="logbtn" value="登入">
-               <input type="reset" class="logbtn" value="關閉" onclick="document.getElementById('wincon').style.display='none';
+                    <div class="signbtn1">Sign up</div>
+                </a>
+            </div>
+            <div class="login" id="signin">
+                <form>
+                    信箱：<input type="email" class="enterplace" required><br>
+                    密碼：<input type="password" class="enterplace" required><br>
+                    <input type="submit" class="logbtn" value="登入">
+                    <input type="reset" class="logbtn" value="關閉" onclick="document.getElementById('wincon').style.display='none';
                document.getElementById('dklayer').style.display='none'">
-            </form>
-        </div>
-        <div class="login" id="signup">
-            <form>
-                姓名：<input type="text" class="enterplace" required><br>
-                信箱：<input type="email" class="enterplace" required><br>
-                密碼：<input type="password" class="enterplace" required><br>
-               <input type="submit" class="logbtn" value="加入會員">
-               <input type="reset" class="logbtn" value="關閉" onclick="document.getElementById('wincon').style.display='none';
+                </form>
+            </div>
+            <div class="login" id="signup">
+                <form>
+                    姓名：<input type="text" class="enterplace" required><br>
+                    信箱：<input type="email" class="enterplace" required><br>
+                    密碼：<input type="password" class="enterplace" required><br>
+                    <input type="submit" class="logbtn" value="加入會員">
+                    <input type="reset" class="logbtn" value="關閉" onclick="document.getElementById('wincon').style.display='none';
                document.getElementById('dklayer').style.display='none'">
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
-    <div id="dklayer" class="darklayer"></div>
+        <div id="dklayer" class="darklayer"></div>
     </article>
     <!-- <footer>
         <div class="footword">
