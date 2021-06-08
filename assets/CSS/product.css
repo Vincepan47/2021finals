@@ -27,21 +27,12 @@ hr {
     background-color: white;
     position: absolute;
     top: 15%;
-    /* margin-top: 10%; */
     margin-left: 15%;
-    /* margin-bottom: 30px; */
-    /* font-family: 'Dancing Script', cursive; */
-    /* border: 1px solid blue; */
 }
 .showspace2 {
-    /* width: 1000px; */
-    /* width: 70vw; */
     height: auto;
     background-color: white;
-    /* margin-left: 15%; */
-    /* margin-bottom: 30px; */
     display: flex;
-    /* font-family: 'Dancing Script', cursive; */
 }
 #commentplace{
     padding-left: 30px;
@@ -103,8 +94,6 @@ hr {
     background-color: black;
     color: white;
     border: none;
-    /* width: 100px; */
-    /* height: 30px; */
     margin-top: 20px;
     margin-bottom: 40px;
     padding-left: 15px;
@@ -127,6 +116,9 @@ hr {
     .proword h1{
         font-size: 18px;
     }
+    .productshow img:hover {
+        opacity: 1;
+    }
 
 }
 
@@ -135,7 +127,6 @@ hr {
     .showspace2 {
         width: 100%;
         margin-left: 0%;
-        /* margin-bottom: 30px; */
         display: block;
     }
     .sepline{
@@ -145,9 +136,10 @@ hr {
         border-top:1px solid gray;
     }
     .bigshowspace {
-        top: 5vh;
-        /* display: flex; */
-        flex-direction: column;
+        top: 15vh;
+        /* top 5vh */
+        margin-bottom: 10vh;
+        /* test */
     }
     .productshow {
         width: 150px;

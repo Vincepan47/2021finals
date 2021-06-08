@@ -89,13 +89,26 @@
 #signup{
     display: none;
 }
-
+@media  screen and (max-width: 1024px) {
+    .wincontent { 
+        left: 10vw;
+        width: 80vw; 
+        height: 50vh; 
+    } 
+    .login{
+        font-size: 16px;
+        margin-top: 12%;
+    }
+    .logbtn{
+        font-size: 16px;
+    }
+}
 @media  screen and (max-width: 450px) {
     .wincontent { 
         top: 25vh; 
         left: 5vw;
         width: 90vw; 
-        height: 35vh; 
+        height: 43vh; 
     } 
     .sign{
         font-size: 20px;

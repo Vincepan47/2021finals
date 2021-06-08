@@ -370,7 +370,7 @@ body {
 }
 
 .proword h4:hover {
-    opacity: 0.5;
+    color: rgb(155, 155, 155);
 }
 
 .proword p {
@@ -484,6 +484,14 @@ footer {
     .sec {
         top: -290px;
         left: 470px;
+    }
+    .productshow img:hover {
+        opacity: 0.8;
+        /* transform: scale(1.4); */
+    }
+    .proword p:hover {
+        /* transform: scale(1.2); */
+        opacity: 1;
     }
 }
 
