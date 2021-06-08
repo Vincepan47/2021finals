@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css');
+body{
+    font-family:'cwTexFanSong';
+    background-color: black;
+}
+.phonefunc{
+    display: none !important;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+hr {
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 60px;
+}
+/* 第一區塊 */
+.abouttop{
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+.abouttitle{
+    padding-top: 60px;
+    position: relative;
+    top: 10vh;
+    height: 190px;
+}
+#aboutus{
+    color: rgb(214, 214, 214);
+    text-align: center;
+    font-size: 80px;
+    animation: bigger 2s linear;
+}
+/* 放大動畫 */
+@keyframes bigger{
+    0%{
+        font-size: 60px;
+        opacity: 0.3;
+    }
+    100%{
+        font-size: 80px;
+        opacity: 1;
+    }
+}
+.ouridea{
+    display: flex;
+    margin-top: 6%;
+}
+.aboutword{
+    background-color: lightgrey;
+    line-height: 30px;
+    font-size: 16px;
+    animation: showup 4s;
+    margin-top: 12%;
+    margin-right: 5%;
+    margin-left: 18%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border: 1px solid lightgray;
+}
+.decobox{
+    width:50%;
+}
+/* 底下出現動畫 */
+@keyframes showup {
+    from {
+      transform: translate3d(0, 20%, 0);
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+    0%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+  
+.wordbg{
+    width: 50%;
+    text-align: center;
+    padding-left: 5%;
+    overflow: hidden;
+    animation: showright 3s ;
+}
+.wordbg img{
+    width: 300px;
+    opacity: 0.9;
+}
+/* 右上方出現動畫 */
+@keyframes showright {
+    from {
+      transform: translate3d(30%, -30%, 0);
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+    0%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 0.9;
+    }
+  }
+
+  /* 第二區塊 */
+.aboutsec{
+    height: 80vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    margin-top: 10%;
+}
+.memberalbum{
+    width: 360px;
+    height: 80vh;
+    background-color: black;
+    margin-left: 10%;
+    overflow: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 110px;
+    padding-bottom: 50px;
+    border-left: 0.5px solid rgb(180, 180, 180);
+    border-right: 0.5px solid rgb(180, 180, 180);
+}
+.memberalbum img{
+    width: 240px;
+    margin-bottom: 20px;
+}
+.scrdown{
+    width: fit-content;
+    /* border: 1px solid purple; */
+    color: rgb(214, 214, 214);
+    transform: rotate(90deg);
+    height: 20px;
+    margin-top: 14%;
+    animation: downfade 1.3s linear infinite;
+}
+@keyframes downfade {
+    
+    0%{
+        margin-top: 14%;
+        opacity: 1;
+    }
+    100%{
+        margin-top: 18%;
+        opacity: 0.2;
+    }
+  }
+.memberintro{
+    /* border: 1px solid purple; */
+    border-left: 0.5px solid rgb(58, 78, 143);
+    border-right: 0.5px solid rgb(58, 78, 143);
+    height: 80vh;
+    overflow: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 110px;
+}
+.introplace{
+    width: 40vw;
+    height: 330px;
+    background-color: lightgrey;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 12%;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+.introplace p{
+    line-height: 25px;
+}
+.work{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: rgb(41, 8, 8);
+}
+/* 第三區塊 */
+.aboutthird{
+    height: 80vh;
+    background-color: black;
+}
+  /* rwd */
+@media screen and (max-width: 450px) {
+    .member {
+        display: none !important;
+    }
+
+    .contact {
+        display: none !important;
+    }
+
+    .cart {
+        display: none !important;
+    }
+
+    .phonefunc {
+        display: block !important;
+    }
+}
