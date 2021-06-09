@@ -89,6 +89,7 @@
 #signup{
     display: none;
 }
+
 @media  screen and (max-width: 1024px) {
     .wincontent { 
         left: 10vw;
@@ -116,6 +117,9 @@
     .login{
         font-size: 14px;
         margin-top: 5%;
+    }
+    .login input{
+        height: 20px;
     }
     .logbtn{
         font-size: 14px;

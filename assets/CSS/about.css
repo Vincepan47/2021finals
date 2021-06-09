@@ -53,8 +53,8 @@ hr {
     background-color: lightgrey;
     line-height: 30px;
     font-size: 16px;
-    animation: showup 4s;
-    margin-top: 12%;
+    /* animation: showup 4s; */
+    margin-top: 14%;
     margin-right: 5%;
     margin-left: 18%;
     padding-top: 5%;
@@ -63,8 +63,12 @@ hr {
     padding-right: 10%;
     border: 1px solid lightgray;
 }
+.aboutword:hover{
+    animation: swing1 2s;
+}
 .decobox{
     width:50%;
+    animation: showup 4s;
 }
 /* 底下出現動畫 */
 @keyframes showup {
@@ -81,6 +85,20 @@ hr {
         opacity: 1;
     }
   }
+  @keyframes swing1 {
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    10%{
+      transform: translate3d(3%,0%, 0);
+    }
+    40%{
+        transform: translate3d(-3%, 0%, 0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+  }
   
 .wordbg{
     width: 50%;
@@ -92,6 +110,9 @@ hr {
 .wordbg img{
     width: 300px;
     opacity: 0.9;
+}
+.wordbg img:hover{
+    animation: swing 3s;
 }
 /* 右上方出現動畫 */
 @keyframes showright {
@@ -108,7 +129,21 @@ hr {
         opacity: 0.9;
     }
   }
-
+/* 晃 */
+  @keyframes swing {
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    10%{
+      transform: translate3d(-15%,-5%, 0);
+    }
+    40%{
+        transform: translate3d(-8%, 8%, 0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+  }
   /* 第二區塊 */
 .aboutsec{
     height: 80vh;
@@ -116,25 +151,42 @@ hr {
     display: flex;
     margin-top: 10%;
 }
+.introbox{
+    /* display: flex; */
+    /* height: 380px; */
+    margin-bottom: 4%;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* padding-bottom: %; */
+    /* border: 1px solid white; */
+}
 .memberalbum{
-    width: 360px;
+    /* width: 360px; */
+    width: 80%;
     height: 80vh;
     background-color: black;
     margin-left: 10%;
     overflow: auto;
-    padding-left: 60px;
-    padding-right: 60px;
+    /* padding-left: 20vw;
+    padding-right: 20vw; */
     padding-top: 110px;
     padding-bottom: 50px;
-    border-left: 0.5px solid rgb(180, 180, 180);
-    border-right: 0.5px solid rgb(180, 180, 180);
+    border-left: 0.5px solid rgb(58, 78, 143);
+    border-right: 0.5px solid rgb(58, 78, 143);
 }
 .memberalbum img{
-    width: 240px;
-    margin-bottom: 20px;
+    width: 200px;
+    height: 280px;
+}
+.introphoto{
+    width: 50%;
+    /* border: 1px solid white; */
+    height: fit-content;
+    margin-top: 1.5%;
 }
 .scrdown{
-    width: fit-content;
+    width: 150px;
     /* border: 1px solid purple; */
     color: rgb(214, 214, 214);
     transform: rotate(90deg);
@@ -164,15 +216,21 @@ hr {
     padding-top: 110px;
 }
 .introplace{
-    width: 40vw;
-    height: 330px;
+    /* width: 40vw; */
+    display: flex;
+    width: 60vw;
+    /* height: 50vh; */
     background-color: lightgrey;
     margin-bottom: 50px;
-    padding-top: 30px;
-    padding-left: 10%;
-    padding-right: 12%;
-    padding-bottom: 30px;
+    padding-top: 3.5%;
+    padding-bottom: 3%;
+    /* padding-left: 10%; */
+    padding-left: 5%;
+    /* padding-right: 12%; */
+    padding-right: 2%;
     border-radius: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 .introplace p{
     line-height: 25px;
@@ -182,11 +240,104 @@ hr {
     margin-bottom: 20px;
     color: rgb(41, 8, 8);
 }
+.contactbtns{
+    display: block;
+    /* border: 1px solid white; */
+    width: 70px;
+    text-align: center;
+
+}
+.contactbtns img{
+    width: 65px;
+    height: 65px;
+}
+.e img{
+    width: 40px;
+    height: 40px;
+}
 /* 第三區塊 */
 .aboutthird{
     height: 80vh;
     background-color: black;
 }
+.contactplace{
+    width: 60vw;
+    height: 70vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 3% 5% 3% 5%;
+    background-image: url('../IMG/con.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contactplace h3{
+    font-size: 28px;
+    /* border: 1px solid white; */
+    text-align: center;
+}
+.contactop{
+    margin-top: 20px;
+    line-height: 50px;
+}
+.enter{
+    height: 40px;
+    width: 50%;
+    font-size: 20px;
+}
+.contactplace textarea{
+    height: 100px;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.send{
+    width: 30%;
+    height: 30%;
+    border: none;
+    color: white;
+    background-color: black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+/* 隱藏 */
+#say{
+    display: none;
+}
+#wannasay{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    /* border: 1px solid blue; */
+    margin-top: 20%;
+}
+#wannasay h2{
+    font-size: 40px;
+    text-shadow: 2px 2px 6px white;
+}
+.wannasaybtn{
+    color: white;
+    background-color: black;
+    width: 50%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 25%;
+    margin-top: 5%;
+    box-shadow: 2px 2px 5px white;
+    cursor: pointer;
+}
+
   /* rwd */
 @media screen and (max-width: 450px) {
     .member {
