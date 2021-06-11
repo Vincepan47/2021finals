@@ -32,7 +32,7 @@ hr {
     color: rgb(214, 214, 214);
     text-align: center;
     font-size: 80px;
-    animation: bigger 2s linear;
+    animation: bigger 1s linear;
 }
 /* 放大動畫 */
 @keyframes bigger{
@@ -259,13 +259,14 @@ hr {
 .aboutthird{
     height: 80vh;
     background-color: black;
+    
 }
 .contactplace{
     width: 60vw;
     height: 70vh;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 10%;
+    margin-top: 15%;
     background-color: lightgrey;
     border-radius: 10px;
     padding: 3% 5% 3% 5%;
