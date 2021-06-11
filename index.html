@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>燭間</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/index.css">
+    <link rel="stylesheet" href="assets/CSS/floatwin.css">
+    <script type="text/javascript" src="assets/JS/main.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="burger" onclick="burgerFunction(this); showsidenav();">
+            <div class="top"></div>
+            <div class="mid"></div>
+            <div class="bottom"></div>
+        </div>
+        <a href="index.html" class="logo">燭間</a>
+        <div class="nav-links">
+            <ul class="nav-ul">
+                <li class="cart"><a href="cart.html">購物車</a>
+                    <ul class="drop-cart">
+                        <li>
+                            <div class="cart-product">
+                                <img src="assets/IMG/dicandle.jpg" alt="">
+                                <h2>購物車商品</h2>
+                                <p>商品數量:1</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cart-product">
+                                <img src="assets/IMG/dicandle.jpg" alt="">
+                                <h2>購物車商品</h2>
+                                <p>商品數量:1</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cart-product">
+                                <img src="assets/IMG/dicandle.jpg" alt="">
+                                <h2>購物車商品</h2>
+                                <p>商品數量:1</p>
+                            </div>
+                        </li>
+                        <li><a href="cart.html">查看所有購物車商品</a></li>
+                        <button class="buybtn"><a href="#">結帳</a></button>
+                    </ul>
+                </li>
+                <li class="member"><a href="#"
+                        onclick="document.getElementById('wincon').style.display='block';document.getElementById('dklayer').style.display='block'">會員中心</a>
+                </li>
+                <li class="contact"><a href="about.html">關於我們</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="Sidenav" id="Sidenav">
+        <ul>
+            <a href="lelabo.html">
+                <li>Le Labo</li>
+            </a>
+            <a href="aesop.html">
+                <li>Aesop</li>
+            </a>
+            <a href="diptyque.html">
+                <li>Diptyque</li>
+            </a>
+            <a href="about.html">
+                <li class="phonefunc">關於我們</li>
+            </a>
+            <a href="#">
+                <li class="phonefunc"
+                    onclick="document.getElementById('wincon').style.display='block';document.getElementById('dklayer').style.display='block'">
+                    會員</li>
+            </a>
+        </ul>
+    </div>
+    <section class="slideshow" id="slideshow">
+        <div class="slide fade">
+            <img src="assets/IMG/ad.jpg" alt="">
+        </div>
+        <div class="slide fade">
+            <img src="assets/IMG/ad1.jpg" alt="">
+        </div>
+        <div class="slide fade">
+            <img src="assets/IMG/ad2.jpg" alt="">
+        </div>
+        <div class="slide fade">
+            <img src="assets/IMG/ad3.jpg" alt="">
+        </div>
+        <a class="prevbtn" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="nextbtn" onclick="plusSlides(1)">&#10095;</a>
+        <div class="control" style="text-align:center">
+            <span class="control-btn" onclick="currentSlide(1)"></span>
+            <span class="control-btn" onclick="currentSlide(2)"></span>
+            <span class="control-btn" onclick="currentSlide(3)"></span>
+            <span class="control-btn" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+    <section class="candle">
+        <!-- <img src="assets/IMG/explore.png" alt=""> -->
+        <div class="exbox"></div>
+        <div class="exword">
+            <h1>準備好踏進蠟燭的殿堂了嗎？</h1>
+            <p>燭間為您特別準備了多款香氛蠟燭<br>
+                疲勞的時候，需要嗅覺spa嗎？<br>
+                千篇ㄧ律的日常，想來點儀式感嗎？<br>
+                失戀了，來點療傷的香氣嗎？<br>
+                不論何時，燭間都在
+            </p>
+        </div>
+        <div class="exbox1"></div>
+        <div class="exword1">
+            <h2>越暗的地方，你越亮</h2>
+            <h2>停電了，至少我會亮</h2>
+            <p>
+                生活中常常看到這些廣告詞嗎？<br>
+                趕緊入手收藏蠟燭吧<br>
+                年輕人最喜歡的儀式感！<br>
+                跟上最新潮流！我還年輕，我還年輕～
+            </p>
+        </div>
+    </section>
+    <section class="hotsale">
+        <h2 class="hotsale-text">熱銷商品</h2>
+        <div class="hotsale-card">
+            <div class="no123">No. 1</div>
+            <a href="product.html">
+                <img src="assets/IMG/dicandle.jpg" class="decan" alt="">
+                <p>漿果香 BAIES</p>
+            </a>
+        </div>
+        <div class="hotsale-card">
+            <div class="no123">No. 2</div>
+            <a href="product.html">
+                <img src="assets/IMG/lecandle2.jpg" class="lecan" alt="">
+                <p>Le Labo Vintage Santal 26</p>
+            </a>
+        </div>
+        <div class="hotsale-card">
+            <div class="no123">No. 3</div>
+            <a href="product.html">
+                <img src="assets/IMG/dicandle1.jpg" class="decan" alt="">
+                <p>沉香 OUD</p>
+            </a>
+        </div>
+    </section>
+    <section class="product-brand">
+        <h2>前往品牌頁</h2>
+        <a href="lelabo.html">
+            <div class="brand brand-left">
+                <p>Le Labo</p>
+            </div>
+        </a>
+        <a href="aesop.html">
+            <div class="brand brand-mid">
+                <p>Aesop</p>
+            </div>
+        </a>
+        <a href="diptyque.html">
+            <div class="brand brand-right">
+                <p>Diptyque</p>
+            </div>
+        </a>
+    </section>
+    <div id="wincon" class="wincontent">
+        <div class="sign">
+            <a href="#" onclick="document.getElementById('signin').style.display='block';
+    document.getElementById('signup').style.display='none'">
+                <div class="signbtn">Sign in</div>
+            </a>
+            <div class="sep"></div>
+            <a href="#" onclick="document.getElementById('signin').style.display='none';
+    document.getElementById('signup').style.display='block'">
+                <div class="signbtn1">Sign up</div>
+            </a>
+        </div>
+        <div class="login" id="signin">
+            <form>
+                信箱：<input type="email" class="enterplace" required><br>
+                密碼：<input type="password" class="enterplace" required><br>
+                <input type="submit" class="logbtn" value="登入">
+                <input type="reset" class="logbtn" value="關閉" onclick="document.getElementById('wincon').style.display='none';
+       document.getElementById('dklayer').style.display='none'">
+            </form>
+        </div>
+        <div class="login" id="signup">
+            <form>
+                姓名：<input type="text" class="enterplace" required><br>
+                信箱：<input type="email" class="enterplace" required><br>
+                密碼：<input type="password" class="enterplace" required><br>
+                <input type="submit" class="logbtn" value="加入會員">
+                <input type="reset" class="logbtn" value="關閉" onclick="document.getElementById('wincon').style.display='none';
+       document.getElementById('dklayer').style.display='none'">
+            </form>
+        </div>
+    </div>
+    <div id="dklayer" class="darklayer"></div>
+    <footer>
+        <div class="footer-container">
+            <h5 class="copyright">燭間 Copyright &copy; 2021 CYIM</h5>
+            <h5 class="browseNum">網站瀏覽人數：XX 人</h5>
+            <h5 class="information">地址：桃園市中壢區中北路200號</h5>
+            <h5 class="information">服務時間：週一～週五 9:00AM~9:00PM</h5>
+            <h5 class="information">連絡電話：09XX-XXXX-XXXX</h5>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        window.sr = ScrollReveal({
+            reset: false
+        });
+        sr.reveal('.exbox', {
+            duration: 1800,
+            origin: 'right',
+            distance: '-200px',
+        });
+        sr.reveal('.exword', {
+            duration: 1800,
+            origin: 'left',
+            distance: '-200px',
+        });
+        sr.reveal('.exbox1', {
+            duration: 1800,
+            origin: 'left',
+            distance: '-200px',
+        });
+        sr.reveal('.exword1', {
+            duration: 1800,
+            origin: 'right',
+            distance: '-200px',
+        });
+        sr.reveal('.hotsale-text', {
+            duration: 1000,
+            origin: 'bottom',
+            distance: '-100px',
+        });
+        sr.reveal('.hotsale-card', {
+            duration: 1000,
+            origin: 'bottom',
+            distance: '-100px',
+        });
+        sr.reveal('.brand-left', {
+            duration: 700,
+            origin: 'right',
+            distance: '-100px',
+        });
+        sr.reveal('.brand-mid', {
+            duration: 700,
+            origin: 'bottom',
+            distance: '-100px',
+        });
+        sr.reveal('.brand-right', {
+            duration: 700,
+            origin: 'left',
+            distance: '-100px',
+        });
+        sr.reveal('footer', {
+            duration: 1500,
+            origin: 'bottom',
+            distance: '-100px',
+        });
+
+        var slideIndex = 1;
+        Slideshow(slideIndex);
+        var timer = setInterval(autoplay, 3000);
+
+        function autoplay() {
+            slideIndex += 1;
+            Slideshow(slideIndex);
+        }
+
+        function plusSlides(n) {
+            Slideshow(slideIndex += n);
+            resetTimer();
+        }
+
+        function currentSlide(n) {
+            Slideshow(slideIndex = n);
+            resetTimer();
+        }
+
+        function resetTimer() {
+            clearInterval(timer);
+            timer = setInterval(autoplay, 3000);
+        }
+
+        function Slideshow(n) {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            var controlBtns = document.getElementsByClassName("control-btn");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < controlBtns.length; i++) {
+                controlBtns[i].className = controlBtns[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            controlBtns[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
