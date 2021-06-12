@@ -119,9 +119,9 @@
     position: relative;
 }
 .exbox1{
-    width: 400px;
+    width: 380px;
     overflow: hidden;
-    height: 650px;
+    height: 600px;
     background-image: url("../IMG/explore1.jpg");
     background-size: cover;
     background-position: center;
