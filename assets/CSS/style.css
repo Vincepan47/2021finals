@@ -33,7 +33,7 @@ nav.sticky {
     background: rgb(0, 0, 0);
 }
 nav.sticky .nav-links ul li a {
-    color: rgb(0, 0, 0);
+    color: #fff;
 }
 nav .logo {
     position: relative;
@@ -60,7 +60,6 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 0px;
 }
 .nav-links {
     flex: 1;
@@ -72,6 +71,38 @@ nav ul {
     padding:8px 16px;
     position: relative;
     transition: 0.3s ease;
+}
+.nav-links ul .search-box {
+    list-style: none;
+    display: flex;
+    position: relative;
+    justify-content: end;
+    padding:8px 0px;
+}
+.nav-links input[type="search"] {
+    border: none;
+    border-bottom: 1px solid grey;
+    height: 25px;
+    width: 60%;
+}
+.nav-links input[type="search"]::-webkit-search-cancel-button {
+    position: relative;
+    right: 5px;
+    background-color: grey;
+}
+.nav-links ul button[type="submit"] {
+    border: none;
+    padding: 7px;
+    background-color: #fff;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.nav-links ul input[type="search"]:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+.nav-links ul input[type="search"]:focus + button[type="submit"] {
+    background-color: #e6e6e6;
 }
 .nav-links .nav-ul > li a {
     position: relative;
@@ -105,7 +136,10 @@ nav.sticky .logo,
 nav.sticky ul li a {
     color: #000;
 }
-
+nav.sticky .buybtn {
+    background-color: black;
+    border: none;
+}
         /*burger*/
 .burger {
     display: inline-block;
