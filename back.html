@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/back.css">
+    <title>後台</title>
+</head>
+
+<body>
+    <div class="productedit">
+        <div class="catebtns">
+            <div class="editplace" onclick="document.getElementById('prod').style.display='block';document.getElementById('help').style.display='none';document.getElementById('orde').style.display='none';">
+                <h3>商品管理</h3>
+            </div>
+            <div class="editplace" onclick="document.getElementById('prod').style.display='none';document.getElementById('help').style.display='none';document.getElementById('orde').style.display='block';">
+                <h3>訂單管理</h3>
+            </div>
+            <div class="editplace" onclick="document.getElementById('prod').style.display='none';document.getElementById('orde').style.display='none';document.getElementById('help').style.display='block';">
+                <h3>客服留言板</h3>
+            </div>
+        </div>
+        <div class="editcontent">
+            <div id="prod">
+                <div>
+                    <h1>又有東西可以賺錢了</h1>
+                    <form class="productnew">
+                        商品名稱：<input type="text">
+                        商品品牌：<input type="text">
+                        商品價格：<input type="text">
+                        商品庫存：<input type="number">
+                        商品圖片檔：<input type="text">
+                        <input type="submit" class="sendbtn" value="新增">
+                    </form>
+                    <hr>
+                </div>
+                <div>
+                    <h1>不想賣這個商品了</h1>
+                    <form class="productnew">
+                        商品 ID：<input type="text">
+                        <input type="submit" class="sendbtn" value="刪除">
+                    </form>
+                    <hr>
+                </div>
+                <div>
+                    <h1>想修改商品咩？</h1>
+                    <form class="productnew">
+                        想要改的商品：<input type="text">
+                        <input type="submit" class="sendbtn" value="查詢">
+                    </form>
+                    <form class="productnew">
+                        商品名稱：<input type="text">
+                        商品品牌：<input type="text">
+                        商品價格：<input type="text">
+                        商品庫存：<input type="number">
+                        商品圖片檔：<input type="text">
+                        <input type="submit" class="sendbtn" value="修改">
+                    </form>
+                    <hr>
+                </div>
+            </div>
+            <div id="orde">
+                <div>
+                    <h1>來看看誰訂了東西</h1>
+                    <form>
+                    
+                    </form>
+                    <hr>
+                </div>
+               
+            </div>
+            <div id="help">
+                <div>
+                    <h1>來看看客人的問題</h1>
+                    <form>
+                        
+                    </form>
+                    <hr>
+                </div>
+               
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

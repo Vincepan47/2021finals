@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/CSS/member.css">
     <link rel="stylesheet" href="assets/CSS/cart.css">
     <link rel="stylesheet" href="assets/CSS/floatwin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/739a6a53ed.js"></script>
 </head>
 <body>
@@ -21,6 +22,7 @@
         <a href="index.html" class="logo">燭間</a>
         <div class="nav-links">
             <ul class="nav-ul">
+                <form class="seach-box"><input type="search" placeholder="搜尋商品"><button type="submit"><i class="fa fa-search"></i></button></form>
                 <li class="cart"><a href="cart.html">購物車</a>
                     <ul class="drop-cart">
                         <li>
@@ -48,11 +50,12 @@
                         <button class="buybtn"><a href="#">結帳</a></button>
                     </ul>
                 </li>
-                <li class="member"><a href="#"
-                        onclick="document.getElementById('wincon').style.display='block';document.getElementById('dklayer').style.display='block'">會員中心</a>
+                <li class="member"><a href="member.html">會員中心</a>
                 </li>
                 <li class="contact"><a href="about.html">關於我們</a></li>
+                <li class="contact"><a href="#" onclick="document.getElementById('wincon').style.display='block';document.getElementById('dklayer').style.display='block'">登入</a></li>
             </ul>
+            
         </div>
     </nav>
     <div class="Sidenav" id="Sidenav">
