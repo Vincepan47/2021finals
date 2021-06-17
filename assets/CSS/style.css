@@ -40,7 +40,7 @@ nav .logo {
     font-weight: 700;
     font-family: 'cwTexFangSong', serif;
     font-weight: bold;
-    background: -webkit-linear-gradient(270deg, rgb(248, 77, 24), rgb(37, 37, 37));
+    background: -webkit-linear-gradient(270deg, rgb(156, 155, 154), rgb(37, 37, 37));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
@@ -51,7 +51,7 @@ nav .logo {
     margin-left: 20px;
 }
 nav.sticky .logo {
-    background: -webkit-linear-gradient(270deg, rgb(37, 37, 37), rgb(248, 77, 24));
+    background: -webkit-linear-gradient(270deg, rgb(255, 255, 255), rgb(248, 162, 24));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
