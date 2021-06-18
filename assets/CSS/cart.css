@@ -1,3 +1,6 @@
+.phonefunc {
+    display: none !important;
+}
 .cart-details {
     position: absolute;
     display: grid;

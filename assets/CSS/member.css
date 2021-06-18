@@ -1,3 +1,6 @@
+.phonefunc {
+    display: none !important;
+}
 html {
     height: 120vh;
 }

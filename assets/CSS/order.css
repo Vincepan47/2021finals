@@ -1,4 +1,6 @@
-
+.phonefunc {
+    display: none !important;
+}
 .memu ul li select {
     display: flex;
     justify-content: center;
