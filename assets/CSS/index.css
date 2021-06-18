@@ -1,4 +1,14 @@
-        /*動態廣告*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    font-family: 'Dancing Script', cursive;
+}
+
+.phonefunc {
+    display: none !important;
+}
+
+/*動態廣告*/
 .slideshow {
     position: relative;
     width: 100%;
@@ -7,6 +17,7 @@
     padding: 0;
     overflow: hidden;
 }
+
 .slide {
     display: none;
     position: absolute;
@@ -16,10 +27,12 @@
     bottom: 0;
     overflow: hidden;
 }
+
 .slide img {
     width: 100%;
     height: 100%;
 }
+
 .prevbtn,
 .nextbtn {
     cursor: pointer;
@@ -36,14 +49,17 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
+
 .nextbtn {
     right: 0;
 }
+
 .prevbtn:hover,
 .nextbtn:hover {
     color: white;
     background: #272727;
 }
+
 .control {
     position: absolute;
     display: flex;
@@ -51,8 +67,9 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 60px;
-    
+
 }
+
 .control-btn {
     cursor: pointer;
     height: 12px;
@@ -76,6 +93,7 @@
     animation-name: fade;
     animation-duration: 2s;
 }
+
 @-webkit-keyframes fade {
     from {
         opacity: .8
@@ -85,6 +103,7 @@
         opacity: 1
     }
 }
+
 @keyframes fade {
     from {
         opacity: .8
@@ -94,10 +113,11 @@
         opacity: 1
     }
 }
+
 .candle {
     position: absolute;
     width: 100%;
-    height: 200vh;
+    height: 230vh;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -107,7 +127,8 @@
     width: 100%;
     background-color: rgb(0, 0, 0);
 }
-.exbox{
+
+.exbox {
     width: 400px;
     overflow: hidden;
     height: 600px;
@@ -118,7 +139,8 @@
     top: 10%;
     position: relative;
 }
-.exbox1{
+
+.exbox1 {
     width: 380px;
     overflow: hidden;
     height: 600px;
@@ -130,67 +152,56 @@
     position: relative;
 }
 
-.exword{
+.exword {
     color: rgb(209, 209, 209);
     margin-left: 50%;
     position: absolute;
-    top: 20%;
+    top: 15%;
     padding-left: 30px;
     padding-right: 20px;
     text-align: center;
 }
-.exword1{
+
+.exword1 {
     color: rgb(209, 209, 209);
     margin-left: 10%;
     position: absolute;
-    top: 62%;
+    top: 55%;
     padding-left: 30px;
     padding-right: 20px;
     text-align: center;
 }
-.exword1 h2{
+
+.exword1 h2 {
     font-size: 42px;
     color: white;
     margin-bottom: 10px;
 }
-.exword1 p{
+
+.exword1 p {
     margin-top: 50px;
     text-align: center;
 }
-.candle h1{
+
+.candle h1 {
     margin-bottom: 50px;
     font-size: 42px;
     color: white;
 }
-.candle p{
+
+.candle p {
     line-height: 40px;
     font-size: 22px;
 }
-.candle > img {
+
+.candle>img {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-#text {
-    position: absolute;
-    background: rgba(87, 87, 87, 0.603);
-    width: 25%;
-    left: 50px;
-    top: 50%;
-    font-size: 20px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 20px 40px;
-    text-align: center;
-}
-#text > h2{
-    font-size: 2em;
-}
-#text > p {
-    padding-top: 10px;
-}
-        /*hotsale*/
+
+/*hotsale*/
 .hotsale {
     background: #F1EFEC;
     height: 100vh;
@@ -199,11 +210,13 @@
     grid-template-rows: 30% auto;
     justify-items: center;
 }
-.hotsale a{
+
+.hotsale a {
     text-decoration: none;
     color: inherit;
 }
-.hotsale h2{
+
+.hotsale h2 {
     grid-column: span 3;
     font-size: 50px;
     font-weight: bold;
@@ -212,6 +225,7 @@
     align-items: center;
     text-align: center;
 }
+
 .hotsale .hotsale-card {
     height: 50vh;
     width: 80%;
@@ -219,27 +233,32 @@
     transition: 0.3s ease;
     text-align: center;
 }
+
 .hotsale .hotsale-card:hover {
     -webkit-box-shadow: 5px 5px 15px 5px rgba(102, 102, 102, 0.5);
     box-shadow: 5px 5px 15px 5px rgba(102, 102, 102, 0.5);
 }
-.decan{
+
+.decan {
     width: 58%;
     height: 50%;
     margin-top: 40px;
 }
-.lecan{
+
+.lecan {
     width: 45%;
     height: 50%;
     margin-top: 40px;
 }
+
 .hotsale .hotsale-card p {
     padding: 20px;
     margin-top: 30px;
     background-color: rgb(218, 218, 218);
     font-size: 20px;
 }
-.no123{
+
+.no123 {
     position: absolute;
     color: white;
     background-color: black;
@@ -250,6 +269,7 @@
     font-size: 20px;
     font-weight: bold;
 }
+
 .product-brand {
     height: 50vh;
     display: grid;
@@ -260,7 +280,8 @@
     margin-top: 20px;
     margin-bottom: 150px;
 }
-.product-brand h2{
+
+.product-brand h2 {
     grid-column: span 3;
     font-size: 50px;
     font-weight: bold;
@@ -269,10 +290,12 @@
     align-items: center;
     text-align: center;
 }
-.product-brand a{
+
+.product-brand a {
     text-decoration: none;
     color: inherit;
 }
+
 .product-brand .brand {
     padding: 50px;
     text-align: center;
@@ -284,31 +307,38 @@
     box-shadow: 4px 4px 6px black;
     margin-top: 50px;
 }
-.product-brand .brand:hover{
+
+.product-brand .brand:hover {
     padding-top: 100px;
 }
+
 .product-brand .brand p {
     font-size: 5rem;
     transition: 0.3s ease;
 }
-.product-brand .brand:hover p{
+
+.product-brand .brand:hover p {
     font-size: 4.5rem;
 }
-.brand-left{
-background-image: url("../IMG/button1.png");
-background-size: cover;
-background-position: center center;
+
+.brand-left {
+    background-image: url("../IMG/button1.png");
+    background-size: cover;
+    background-position: center center;
 }
-.brand-mid{
+
+.brand-mid {
     background-image: url("../IMG/button2.jpg");
-background-size: cover;
-background-position: center center;
+    background-size: cover;
+    background-position: center center;
 }
-.brand-right{
+
+.brand-right {
     background-image: url("../IMG/diptyquebg.jpg");
-background-size: cover;
-background-position: center center;
+    background-size: cover;
+    background-position: center center;
 }
+
 footer {
     background: #000;
     padding-top: 40px;
@@ -316,61 +346,295 @@ footer {
     padding-left: 35%;
     padding-right: 35%;
 }
+
 footer .footer-container {
     font-size: 18px;
     color: rgb(228, 228, 228);
     text-align: center;
     line-height: 28px;
 }
-.information:hover{
+
+.information:hover {
     animation: rubberBand 1s;
     color: rgb(228, 203, 170);
 }
-.copyright{
+
+.copyright {
     margin-bottom: 20px;
     font-size: 16px;
 }
-.copyright:hover{
+
+.copyright:hover {
     animation: rubberBand 1s;
     color: rgb(228, 203, 170);
 }
-.browseNum:hover{
+
+.browseNum:hover {
     animation: rubberBand 1s;
     color: rgb(228, 203, 170);
 }
+
 @keyframes rubberBand {
     from {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
     }
-  
+
     30% {
-      -webkit-transform: scale3d(1.25, 0.75, 1);
-      transform: scale3d(1.25, 0.75, 1);
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
     }
-  
+
     40% {
-      -webkit-transform: scale3d(0.75, 1.25, 1);
-      transform: scale3d(0.75, 1.25, 1);
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
     }
-  
+
     50% {
-      -webkit-transform: scale3d(1.15, 0.85, 1);
-      transform: scale3d(1.15, 0.85, 1);
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
     }
-  
+
     65% {
-      -webkit-transform: scale3d(0.95, 1.05, 1);
-      transform: scale3d(0.95, 1.05, 1);
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
     }
-  
+
     75% {
-      -webkit-transform: scale3d(1.05, 0.95, 1);
-      transform: scale3d(1.05, 0.95, 1);
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
     }
-  
+
     to {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
     }
-  }
+}
+
+/* rwd */
+@media screen and (max-width: 1024px) {
+    .member {
+        display: none !important;
+    }
+
+    .contact {
+        display: none !important;
+    }
+
+    .cart {
+        display: none !important;
+    }
+
+    .phonefunc {
+        display: block !important;
+    }
+
+    .slideshow {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .candle {
+        height: 120vh;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .exbox {
+        width: 250px;
+        height: 400px;
+        margin-left: 12%;
+    }
+
+    .exbox1 {
+        width: 250px;
+        height: 400px;
+        margin-left: 54%;
+    }
+
+    .exword {
+        margin-left: 46%;
+        top: 12%;
+        padding-right: 30px;
+    }
+
+    .exword1 {
+        margin-left: 5%;
+        top: 54%;
+    }
+
+    .exword1 h2 {
+        font-size: 26px;
+    }
+
+    .candle h1 {
+        margin-bottom: 50px;
+        font-size: 26px;
+        color: white;
+    }
+
+    .candle p {
+        font-size: 18px;
+    }
+
+    .hotsale {
+        height: 60vh;
+    }
+
+    .hotsale .hotsale-card {
+        height: 25vh;
+        width: 90%;
+    }
+
+    .hotsale .hotsale-card p {
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .no123 {
+        font-size: 12px;
+    }
+
+    .product-brand {
+        height: 40vh;
+        margin-bottom: 120px;
+    }
+
+    .product-brand .brand {
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 220px;
+        height: 220px;
+        margin-top: 20px;
+    }
+
+    .product-brand .brand:hover {
+        padding-top: 60px;
+    }
+
+    .product-brand .brand p {
+        font-size: 3rem;
+    }
+
+    .product-brand .brand:hover p {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .slideshow {
+        width: 100vw;
+        height: 30vh;
+        top: 70px;
+        position: relative;
+    }
+
+    .prevbtn,
+    .nextbtn {
+        padding: 5px;
+    }
+
+    .control {
+        bottom: 20px;
+    }
+
+    .control-btn {
+        height: 8px;
+        width: 30px;
+    }
+
+    .candle {
+        display: none;
+    }
+
+    .hotsale {
+        height: 50vh;
+        margin-top: 70px;
+    }
+
+    .hotsale h2 {
+        font-size: 30px;
+    }
+
+    .hotsale .hotsale-card {
+        height: 28vh;
+        width: 95%;
+    }
+
+    .hotsale .hotsale-card p {
+        font-size: 12px;
+    }
+
+    .no123 {
+        font-size: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .decan {
+        width: 48%;
+        height: 30%;
+        margin-top: 40px;
+    }
+
+    .lecan {
+        width: 40%;
+        height: 28%;
+        margin-top: 40px;
+    }
+
+    .product-brand {
+        height: 40vh;
+        margin-bottom: 50px;
+    }
+
+    .product-brand h2 {
+        font-size: 30px;
+    }
+
+    .product-brand .brand {
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 105px;
+        height: 105px;
+        margin-top: 10px;
+    }
+
+    .product-brand .brand:hover {
+        padding-top: 30px;
+    }
+
+    .product-brand .brand p {
+        font-size: 1rem;
+    }
+
+    .product-brand .brand:hover p {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        background: #000;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    footer .footer-container {
+        font-size: 8px;
+        line-height: 20px;
+    }
+
+    .copyright {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+}

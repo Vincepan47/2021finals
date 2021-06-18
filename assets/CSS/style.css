@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/earlyaccess/cwtexkai.css');
 @import url('https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css');
+
 *,
 *::before,
 *::after {
@@ -7,12 +8,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     height: auto;
 }
+
 nav {
     background-color: rgb(255, 255, 255);
     position: fixed;
@@ -28,13 +32,16 @@ nav {
     z-index: 100000;
     font-family: '微軟正黑體';
 }
+
 nav.sticky {
     padding: 9px 16px;
     background: rgb(0, 0, 0);
 }
+
 nav.sticky .nav-links ul li a {
     color: #fff;
 }
+
 nav .logo {
     position: relative;
     font-weight: 700;
@@ -50,46 +57,54 @@ nav .logo {
     transition: 0.6s;
     margin-left: 20px;
 }
+
 nav.sticky .logo {
     background: -webkit-linear-gradient(270deg, rgb(255, 255, 255), rgb(248, 162, 24));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 nav ul {
     position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
 .nav-links {
     flex: 1;
     text-align: center;
 }
+
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding:8px 16px;
+    padding: 8px 16px;
     position: relative;
     transition: 0.3s ease;
 }
+
 .nav-links ul .search-box {
     list-style: none;
     display: flex;
     position: relative;
     justify-content: end;
-    padding:8px 0px;
+    padding: 8px 0px;
 }
+
 .nav-links input[type="search"] {
     border: none;
     border-bottom: 1px solid grey;
     height: 25px;
     width: 60%;
 }
+
 .nav-links input[type="search"]::-webkit-search-cancel-button {
     position: relative;
     right: 5px;
     background-color: grey;
 }
+
 .nav-links ul button[type="submit"] {
     border: none;
     padding: 7px;
@@ -97,14 +112,17 @@ nav ul {
     transition: 0.3s ease;
     cursor: pointer;
 }
+
 .nav-links ul input[type="search"]:focus {
     outline: none;
     border-bottom: 1px solid #000;
 }
-.nav-links ul input[type="search"]:focus + button[type="submit"] {
+
+.nav-links ul input[type="search"]:focus+button[type="submit"] {
     background-color: #e6e6e6;
 }
-.nav-links .nav-ul > li a {
+
+.nav-links .nav-ul>li a {
     position: relative;
     margin: 0 15px;
     color: rgb(0, 0, 0);
@@ -115,7 +133,8 @@ nav ul {
     letter-spacing: 2px;
     font-weight: bold;
 }
-.nav-links .nav-ul > li::after {
+
+.nav-links .nav-ul>li::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -123,57 +142,70 @@ nav ul {
     display: block;
     margin: auto;
     transition: 0.5s;
-    
+
 }
-.nav-links .nav-ul > li:hover::after {
+
+.nav-links .nav-ul>li:hover::after {
     width: 100%;
 }
-.nav-links .nav-ul > li:hover > a {
+
+.nav-links .nav-ul>li:hover>a {
     letter-spacing: 4px;
     color: rgb(235, 51, 51);
 }
+
 nav.sticky .logo,
 nav.sticky ul li a {
     color: #000;
 }
+
 nav.sticky .buybtn {
     background-color: black;
     border: none;
 }
-        /*burger*/
+
+/*burger*/
 .burger {
     display: inline-block;
     cursor: pointer;
 }
-.top, .mid, .bottom {
+
+.top,
+.mid,
+.bottom {
     width: 35px;
     height: 5px;
     background: rgb(0, 0, 0);
     margin: 6px 0px;
     transition: 0.4s;
 }
+
 .change .top {
-    -webkit-transform: rotate(-45deg) translate(-9px,6px);
-    transform: rotate(-45deg) translate(-9px,6px);
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
 }
+
 .change .mid {
     opacity: 0;
 }
+
 .change .bottom {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
+
 nav.sticky .burger {
     transition: 0.4s;
     background: rgb(0, 0, 0);
 }
+
 nav.sticky .top,
 nav.sticky .mid,
 nav.sticky .bottom {
     background: #fff;
 }
 
-        /*cart*/
+/*cart*/
 .cart .drop-cart {
     position: absolute;
     display: flex;
@@ -190,6 +222,7 @@ nav.sticky .bottom {
     border-radius: 7px;
     padding-bottom: 15px;
 }
+
 .cart .drop-cart::before {
     content: "";
     width: 20px;
@@ -199,41 +232,50 @@ nav.sticky .bottom {
     background: #999999;
     transform: rotate(45deg);
 }
+
 .cart:hover .drop-cart {
     opacity: 1;
     visibility: visible;
     transition: all 0.5s ease;
 }
-.drop-cart > li:hover {
+
+.drop-cart>li:hover {
     background: rgb(70, 70, 70);
 }
+
 .drop-cart .cart-product {
     padding: 5px 0px;
 }
-.drop-cart .cart-product > img {
+
+.drop-cart .cart-product>img {
     width: 50%;
     float: left;
     border-radius: 10px;
 }
-.drop-cart .cart-product > p {
+
+.drop-cart .cart-product>p {
     text-align: center;
     padding: 20px;
 }
+
 .buybtn {
     margin: 10px 0px;
 }
-        /*Sidenav*/
+
+/*Sidenav*/
 .Sidenav {
     position: fixed;
     background: rgb(46, 46, 46);
     width: 250px;
-    height: 100%;
+    height: 120vh;
+    top: -10px;
     padding-top: 90px;
     left: -250px;
     z-index: 999;
     transition: 0.3s;
 }
-.Sidenav ul li{
+
+.Sidenav ul li {
     position: relative;
     margin: 10px;
     padding: 20px 0px 20px 30px;
@@ -241,21 +283,24 @@ nav.sticky .bottom {
     transition: 0.3s;
     border-radius: 10px;
 }
+
 .Sidenav ul a {
     text-decoration: none;
     font-size: 30px;
     font-weight: bold;
     color: #d8d8d8;
 }
+
 .Sidenav ul li:hover {
     background: #fff;
     color: #284072;
 }
+
 .Sidenav.active {
     left: 0;
 }
 
-        /*hoverbtn*/
+/*hoverbtn*/
 #hoverbtn {
     display: none;
     position: fixed;
@@ -275,8 +320,9 @@ nav.sticky .bottom {
 #hoverbtn:hover {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;    
+    animation: gradient 10s ease infinite;
 }
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -288,5 +334,26 @@ nav.sticky .bottom {
 
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        justify-content: space-evenly;
+        padding-right: 20px;
+    }
+
+    .Sidenav ul a {
+        font-size: 20px;
+    }
+
+    .Sidenav ul li {
+        padding: 10px 0px 10px 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav {
+        padding-right: 320px;
     }
 }

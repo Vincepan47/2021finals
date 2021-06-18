@@ -1,14 +1,18 @@
+html {
+    height: 120vh;
+}
 body {
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     background-color: rgb(241, 239, 236);
     background-image: url('../IMG/member.jpg');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     font-family: '微軟正黑體';
+    min-height: 100%;
 }
+
 .menu {
     display: flex;
     position: absolute;
@@ -22,6 +26,7 @@ body {
     right: 300px;
     transition: 0.3s ease;
 }
+
 .menu ul {
     display: flex;
     width: 100%;
@@ -32,6 +37,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 .menu ul li {
     display: inline-block;
     list-style: none;
@@ -39,6 +45,7 @@ body {
     padding: 0;
     margin-left: 40px;
 }
+
 .menu ul li::before {
     content: "";
     position: absolute;
@@ -59,15 +66,18 @@ body {
     font-weight: bold;
     z-index: 1;
 }
+
 .menu ul li:hover {
-    
+
     background: rgba(255, 255, 255, 0.856);
     letter-spacing: 4px;
     /* color: rgb(0, 0, 0); */
 }
+
 .menu ul li.selected {
     background: -webkit-linear-gradient(180deg, rgb(8, 14, 65), rgb(48, 57, 139));
 }
+
 /*member*/
 
 .member-info {
@@ -78,7 +88,7 @@ body {
     left: 300px;
     right: 300px;
     background: #fff;
-    box-shadow: 5px 7px 5px rgba(0, 0, 0,0.7);
+    box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.7);
     padding-bottom: 60px;
     margin-top: 50px;
 }
@@ -91,15 +101,18 @@ body {
     font-size: 16px;
     letter-spacing: 5px;
 }
+
 .member-details .input-box {
     width: calc(100% / 2 - 20px);
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
 .member-details .input-box .details {
     display: block;
     margin-bottom: 5px;
 }
+
 .member-details .input-box input {
     height: 40px;
     width: 100%;
@@ -120,13 +133,15 @@ body {
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
     transition-delay: 0.1s;
 }
+
 .changebtn {
     position: absolute;
     top: 10px;
     right: 10px;
     float: right;
 }
-.changebtn button{
+
+.changebtn button {
     position: relative;
     padding: 10px 20px;
     border-radius: 7px;
@@ -135,31 +150,38 @@ body {
     color: white;
     transition: 100ms ease;
 }
+
 .changebtn button:hover {
-     transform: scale(1.03);
-     cursor: pointer;
+    transform: scale(1.03);
+    cursor: pointer;
 }
+
 .changebtn button:active {
     transform: scale(0.9);
 }
+
 .changebtn .activebtn div:last-child {
     display: none;
 }
+
 .changebtn .activebtn div:first-child.active {
-    display:none;
+    display: none;
 }
-.changebtn button div:first-child.active + div:last-child {
+
+.changebtn button div:first-child.active+div:last-child {
     display: block;
 }
+
 .member-details .formbtn {
     position: relative;
     left: 5px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
     top: 20px;
-    
+
 }
+
 .member-details .formbtn input {
     padding: 10px 20px;
     border-radius: 7px;
@@ -167,13 +189,79 @@ body {
     margin-right: 10px;
     transition: 0.3s ease-out;
 }
+
 .member-details .formbtn input:hover {
     background: rgb(28, 32, 93);
     transform: scale(1.03);
     color: white;
     cursor: pointer;
 }
+
 .member-details .formbtn input:active {
     transform: scale(0.9);
 }
 
+/* rwd */
+@media screen and (max-width: 1024px) {
+    .member {
+        display: none !important;
+    }
+
+    .contact {
+        display: none !important;
+    }
+
+    .cart {
+        display: none !important;
+    }
+
+    .phonefunc {
+        display: block !important;
+    }
+
+    .menu {
+        left: 5%;
+        right: 5%;
+    }
+
+    .member-info {
+        left: 5%;
+        right: 5%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .menu ul li a {
+        font-size: 16px;
+    }
+
+    .menu ul li {
+        margin-left: 10px;
+    }
+
+    .member-info .member-details {
+        margin: 45px 10px 10px 10px;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .member-details .input-box {
+        margin-top: 10px;
+    }
+
+    .member-details .input-box input {
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .changebtn button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .member-details .formbtn input {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}

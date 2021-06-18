@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css');
 body{
     background-color: rgb(241, 239, 236);
     background-image: url("../IMG/probg.png");
-    /* background-repeat: no-repeat; */
-    /* background-position: right center; */
     background-attachment: fixed;
-    /* font-family: cursive; */
-    font-family:'cwTexFanSong';
+    font-family: 'Dancing Script', cursive;
 }
 .phonefunc{
     display: none !important;
@@ -107,6 +103,21 @@ hr {
 }
 /* rwd */
 @media screen and (max-width: 1024px) {
+    .member {
+        display: none !important;
+    }
+
+    .contact {
+        display: none !important;
+    }
+
+    .cart {
+        display: none !important;
+    }
+
+    .phonefunc {
+        display: block !important;
+    }
   
     .bigshowspace {
         width: 90%;
@@ -137,9 +148,7 @@ hr {
     }
     .bigshowspace {
         top: 15vh;
-        /* top 5vh */
         margin-bottom: 10vh;
-        /* test */
     }
     .productshow {
         width: 150px;
@@ -166,20 +175,5 @@ hr {
     }
     .comm p{
         font-size: 14px;
-    }
-    .member {
-        display: none !important;
-    }
-
-    .contact {
-        display: none !important;
-    }
-
-    .cart {
-        display: none !important;
-    }
-
-    .phonefunc {
-        display: block !important;
     }
 }

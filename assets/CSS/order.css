@@ -1,4 +1,11 @@
 
+.memu ul li select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 5vw;
+}
 .order-details {
     position: absolute;
     display: grid;
@@ -6,7 +13,7 @@
     grid-auto-rows: minmax(50px, auto);
     overflow: hidden;
     padding: 5px;
-    top: 150px;
+    top: 200px;
     left: 300px;
     right: 300px;
     background: #fff;
@@ -200,4 +207,109 @@ hr {
 }
 .candetail{
     margin-top: 50px;
+}
+/* rwd */
+@media screen and (max-width: 1024px) {
+    .member {
+        display: none !important;
+    }
+
+    .contact {
+        display: none !important;
+    }
+
+    .cart {
+        display: none !important;
+    }
+
+    .phonefunc {
+        display: block !important;
+    }
+    .order-details {
+        overflow: hidden;
+        left: 5%;
+        right: 5%;
+        letter-spacing: 3px;
+    }
+    .combtn{
+        height: auto;
+        width: 100px;
+        font-size: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .cart-details {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(50px, 500px));
+        grid-auto-rows: minmax(100px, auto);
+        overflow: auto;
+        padding: 5px;
+    }
+    .menu ul li a {
+        font-size: 14px;
+    }
+
+    .menu ul li {
+        margin-left: 3px;
+    }
+    .order-title,
+    .product {
+        overflow: hidden;
+        padding: 5px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    
+    .order-title {
+        background: rgb(255, 255, 255);
+        font-size: 12px;
+    }
+    .candetail{
+        margin-top: 40px;
+        font-size: 12px;
+    }
+    .product {
+        font-size: 12px;
+    }
+    .product img {
+        height: 100%;
+        width: 50%;
+        float: left;
+        display: none;
+    }
+    .product .info {
+        height: 50%;
+        width: 40%;
+        padding: 0;
+    }
+
+    .product .quantity {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .product input[type="number"] {
+        -webkit-appearance: textfield;
+        text-align: center;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        height: 20px;
+        width: 10px;
+    }
+
+    .product .minusbtn,
+    .product .plusbtn {
+        width: 50%;
+    }
+    .hidecom{
+        left: 9%;
+    }
 }

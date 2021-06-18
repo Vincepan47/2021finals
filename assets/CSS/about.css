@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css');
 body{
-    font-family:'cwTexFanSong';
+    font-family: 'Dancing Script', cursive;
     background-color: black;
 }
 .phonefunc{
@@ -53,7 +52,6 @@ hr {
     background-color: lightgrey;
     line-height: 30px;
     font-size: 16px;
-    /* animation: showup 4s; */
     margin-top: 14%;
     margin-right: 5%;
     margin-left: 18%;
@@ -152,24 +150,17 @@ hr {
     margin-top: 10%;
 }
 .introbox{
-    /* display: flex; */
-    /* height: 380px; */
     margin-bottom: 4%;
     padding-top: 3%;
     padding-left: 5%;
     padding-right: 5%;
-    /* padding-bottom: %; */
-    /* border: 1px solid white; */
 }
 .memberalbum{
-    /* width: 360px; */
     width: 80%;
     height: 80vh;
     background-color: black;
     margin-left: 10%;
     overflow: auto;
-    /* padding-left: 20vw;
-    padding-right: 20vw; */
     padding-top: 110px;
     padding-bottom: 50px;
     border-left: 0.5px solid rgb(58, 78, 143);
@@ -181,13 +172,11 @@ hr {
 }
 .introphoto{
     width: 50%;
-    /* border: 1px solid white; */
     height: fit-content;
     margin-top: 1.5%;
 }
 .scrdown{
     width: 150px;
-    /* border: 1px solid purple; */
     color: rgb(214, 214, 214);
     transform: rotate(90deg);
     height: 20px;
@@ -205,28 +194,15 @@ hr {
         opacity: 0.2;
     }
   }
-.memberintro{
-    /* border: 1px solid purple; */
-    border-left: 0.5px solid rgb(58, 78, 143);
-    border-right: 0.5px solid rgb(58, 78, 143);
-    height: 80vh;
-    overflow: auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 110px;
-}
+
 .introplace{
-    /* width: 40vw; */
     display: flex;
     width: 60vw;
-    /* height: 50vh; */
     background-color: lightgrey;
     margin-bottom: 50px;
     padding-top: 3.5%;
     padding-bottom: 3%;
-    /* padding-left: 10%; */
     padding-left: 5%;
-    /* padding-right: 12%; */
     padding-right: 2%;
     border-radius: 10px;
     margin-left: 10vw;
@@ -242,7 +218,6 @@ hr {
 }
 .contactbtns{
     display: block;
-    /* border: 1px solid white; */
     width: 70px;
     text-align: center;
 
@@ -270,13 +245,12 @@ hr {
     background-color: lightgrey;
     border-radius: 10px;
     padding: 3% 5% 3% 5%;
-    background-image: url('../IMG/con.jpg');
+    background-image: url('../IMG/conn.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .contactplace h3{
     font-size: 28px;
-    /* border: 1px solid white; */
     text-align: center;
 }
 .contactop{
@@ -312,10 +286,7 @@ hr {
 }
 #wannasay{
     text-align: center;
-    align-items: center;
-    align-content: center;
     width: 100%;
-    /* border: 1px solid blue; */
     margin-top: 20%;
 }
 #wannasay h2{
@@ -340,7 +311,7 @@ hr {
 }
 
   /* rwd */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1024px) {
     .member {
         display: none !important;
     }
@@ -356,4 +327,182 @@ hr {
     .phonefunc {
         display: block !important;
     }
+    #aboutus{
+        font-size: 50px;
+        animation: bigger 1s linear;
+    }
+    @keyframes bigger{
+        0%{
+            font-size: 30px;
+            opacity: 0.3;
+        }
+        100%{
+            font-size: 50px;
+            opacity: 1;
+        }
+    }
+    .aboutword{
+        line-height: 20px;
+        font-size: 12px;
+        margin-left: 18%;
+    }
+    .wordbg{
+        width: 40%;
+    }
+    .wordbg img{
+        width: 200px;
+    }
+    .memberalbum{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 110px;
+        padding-bottom: 50px;
+    }
+    .scrdown{
+       display: none;
+    }
+    .introplace{
+        width: 80vw;
+        background-color: lightgrey;
+        margin-bottom: 50px;
+        padding-top: 3.5%;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-radius: 10px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        font-size: 12px;
+    }
+    .aboutthird{
+        height: 70vh;
+        background-color: black;
+        
+    }
+    .contactplace{
+        width: 80vw;
+        height: 40vh;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .contactplace h3{
+        font-size: 20px;
+    }
+    .contactop{
+        line-height: 40px;
+    }
+    .enter{
+        height: 30px;
+        font-size: 16px;
+    }
+    .contactplace textarea{
+        height: 100px;
+        font-size: 16px;
+    }
+    .send{
+        width: 40%;
+        height: 30%;
+        font-size: 14px;
+    }
+    #wannasay h2{
+        font-size: 28px;
+    }
+    .wannasaybtn{
+        width: 70%;
+        font-size: 16px;
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .decobox{
+        width: 95%;
+    }
+    .aboutword{
+        margin-left: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .wordbg{
+        display: none;
+    }
+    .abouttitle{
+        text-align: center;
+    }
+    .aboutsec{
+        height: 80vh;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        margin-top: 10%;
+    }
+    .memberalbum{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 110px;
+        padding-bottom: 50px;
+    }
+    .memberalbum img{
+        width: 150px;
+        height: 220px;
+    }
+    .introphoto{
+        width: 160px;
+        margin-left: 20%;
+    }
+    .scrdown{
+        display: none;
+    }
+    .introplace{
+        flex-direction: column;
+    }
+    .contactbtns{
+        display: flex;
+        width: 180px;
+    }
+    .contactbtns img{
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    .e img{
+        margin-top: 8px;
+        margin-left: 15px;
+        width: 25px;
+        height: 25px;
+    }
+    .aboutthird{
+        height: 70vh;
+        background-color: black;
+        
+    }
+    .contactplace{
+        height: 50vh;
+    }
+    .contactplace h3{
+        font-size: 16px;
+    }
+    .contactop{
+        margin-top: 10px;
+        line-height: 30px;
+    }
+    .enter{
+        height: 22px;
+        font-size: 14px;
+    }
+    .contactplace textarea{
+        height: 80px;
+        margin-top: 10px;
+    }
+    .send{
+        width: 50%;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    #wannasay h2{
+        font-size: 20px;
+    }
+    
 }
