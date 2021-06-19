@@ -241,7 +241,7 @@ hr {
     height: 70vh;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 15%;
+    margin-top: 10%;
     background-color: lightgrey;
     border-radius: 10px;
     padding: 3% 5% 3% 5%;
@@ -308,6 +308,21 @@ hr {
     margin-top: 5%;
     box-shadow: 2px 2px 5px white;
     cursor: pointer;
+}
+/* 地圖 */
+.mymap{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    width: 60%;
+    height: 450px;
+    border:0;
+}
+.where{
+    color: white;
+    font-size: 48px;
+    margin-top: 10%;
+    margin-left: 25%;
 }
 
   /* rwd */
@@ -413,6 +428,15 @@ hr {
         font-size: 16px;
         margin-left: 15%;
     }
+    .mymap{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        height: 400px;
+    }
+    .where{
+        margin-left: 15%;
+    }
 }
 @media screen and (max-width: 450px) {
     .decobox{
@@ -503,6 +527,16 @@ hr {
     }
     #wannasay h2{
         font-size: 20px;
+    }
+    .mymap{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        height: 200px;
+    }
+    .where{
+        margin-left: 15%;
+        font-size: 24px;
     }
     
 }
